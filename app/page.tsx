@@ -5,7 +5,10 @@ import clsx from "clsx";
 
 export default function Home() {
   return (
-    <div className="py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center">
+    <div
+      className="py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center"
+      data-scroll-section
+    >
       <Nav />
       <div className="md:w-[50%] flex flex-col place-content-center text-center h-[100vh] px-[2rem]">
         <h1 className="text-[45px] font-black mb-4">
@@ -20,6 +23,14 @@ export default function Home() {
 
           <AngleDownAnimationButton />
         </div>
+        {/* <div
+          className="dark:text-gray-400 text-gray-200 text-[200px]  "
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="2"
+        >
+          DEV
+        </div> */}
       </div>
       <div className="about-link dark:bg-white bg-[#171717] text-white text-[64px] dark:text-black h-[70vh] w-full flex items-center justify-center font-medium ">
         <p className="hover-underline-animation">About Me</p>

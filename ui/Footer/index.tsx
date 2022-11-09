@@ -5,12 +5,65 @@ import { FaGithub, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 export function Footer() {
   return (
     <>
-      <footer className="footer h-[60vh] p-[3em] bg-[#fafafa] dark:bg-[#171717] divide-y">
+      <footer
+        className="footer h-[60vh] p-[3em] bg-[#fafafa] dark:bg-[#171717] divide-y"
+        data-scroll-section
+      >
         <div className="flex flex-row justify-between items-center">
           <div className="wim">
-            <p className="font-black text-[64px] mb-2">Have an idea? </p>
-            <p className="font-light text-[40px] mb-2">
-              Let&apos;s work together.{" "}
+            <p
+              className="font-black text-[64px] mb-2 flex flex-row gap-4"
+              data-scroll=""
+            >
+              <div
+                data-scroll=""
+                data-scroll-delay="0.18"
+                data-scroll-speed="5"
+              >
+                {" "}
+                Have{" "}
+              </div>{" "}
+              <div
+                data-scroll=""
+                data-scroll-delay="0.12"
+                data-scroll-speed="5"
+              >
+                an
+              </div>{" "}
+              <div
+                data-scroll=""
+                data-scroll-delay="0.08"
+                data-scroll-speed="5"
+              >
+                idea?
+              </div>
+            </p>
+            <p
+              className="font-light text-[40px] mb-2 flex flex-row gap-4"
+              data-scroll=""
+            >
+              <div
+                data-scroll=""
+                data-scroll-delay="0.18"
+                data-scroll-speed="5"
+              >
+                {" "}
+                Let&apos;s{" "}
+              </div>{" "}
+              <div
+                data-scroll=""
+                data-scroll-delay="0.12"
+                data-scroll-speed="5"
+              >
+                work
+              </div>{" "}
+              <div
+                data-scroll=""
+                data-scroll-delay="0.08"
+                data-scroll-speed="5"
+              >
+                together
+              </div>
             </p>
           </div>
           <div className="flex gap-6 text-[20px] font-thin">

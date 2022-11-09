@@ -3,6 +3,7 @@ import ThemeContextProvider from "../providers/ThemeContext";
 import { Footer } from "../ui/Footer";
 import "./globals.css";
 import localFont from "@next/font/local";
+import LocomotiveScroll from "../providers/LocomotiveScroll";
 
 const myFont = localFont({ src: "../lib/font/ProximaSoft-Bold.woff" });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
       <head />
       <body className="bg-[#fafafa] dark:bg-[#171717] transition-all duration-500 text-[#171717] dark:text-white font-proxima overflow-x-hidden">
         <ThemeContextProvider>
-          {/* <AnimatedCursor /> */}
-          {children}
-          <Footer />
+          <LocomotiveScroll>
+            {/* <AnimatedCursor /> */}
+            {children}
+            <Footer />
+          </LocomotiveScroll>
         </ThemeContextProvider>
       </body>
     </html>
