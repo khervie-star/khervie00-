@@ -9,10 +9,10 @@ export function Footer() {
         className="footer h-[60vh] p-[3em] bg-[#fafafa] dark:bg-[#171717] divide-y"
         data-scroll-section
       >
-        <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full">
           <div className="wim">
             <div
-              className="font-black text-[64px] mb-2 flex flex-row gap-4"
+              className="font-black text-[32px] md:text-[64px] mb-2 flex flex-row gap-2 md:gap-4"
               data-scroll=""
             >
               <div
@@ -39,7 +39,7 @@ export function Footer() {
               </div>
             </div>
             <div
-              className="font-light text-[40px] mb-2 flex flex-row gap-4]]"
+              className="font-light text-[20px] md:text-[40px] mb-2 flex flex-row gap-4]]"
               data-scroll=""
             >
               <div
@@ -66,7 +66,7 @@ export function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex gap-6 text-[20px] font-thin">
+          <div className="flex gap-3 md:gap-6 text-[20px] font-thin text-[#171717] dark:text-[#fafafa] w-full flex-wrap">
             <Link href="">Khervie00</Link>
             <Link href="">About </Link>
             <Link href="">Projects</Link>
@@ -76,10 +76,10 @@ export function Footer() {
         </div>
 
         <div className="flex justify-between items-center">
-          <div className="font-extralight text-md align-center my-8">
+          <div className="font-extralight text-[14px]  md:text-md align-center my-8">
             &copy; Kwesi Hervie 2022
           </div>
-          <div className="flex gap-6 text-[20px]">
+          <div className="flex gap-2 md:gap-6 text-[14px] md:text-[20px]">
             <Link href="">
               <FaTwitter />
             </Link>
