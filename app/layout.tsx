@@ -25,12 +25,12 @@ export default function RootLayout({
       <head />
       <body className="bg-[#fafafa] dark:bg-[#171717] transition-all duration-500 text-[#171717] dark:text-white overflow-x-hidden relative ">
         <ThemeContextProvider>
-          {/* <LocomotiveScroll> */}
-          {/* <AnimatedCursor /> */}
-          <NavigationBar />
-          {children}
-          <Footer />
-          {/* </LocomotiveScroll>  */}
+          <LocomotiveScroll>
+            {/* <AnimatedCursor /> */}
+            <NavigationBar />
+            {children}
+            <Footer />
+          </LocomotiveScroll>
         </ThemeContextProvider>
       </body>
     </html>

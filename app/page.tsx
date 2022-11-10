@@ -25,7 +25,7 @@ export default function Home() {
             <AngleDownAnimationButton />
           </div>
         </div>
-        <div className="about-link dark:bg-white bg-[#171717] text-white text-[64px] dark:text-black h-[70vh] w-full flex items-center justify-center font-medium ">
+        <div className="about-link dark:bg-white bg-[#171717] text-white text-[64px] dark:text-black h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
           <p className="hover-underline-animation">About Me</p>
         </div>
       </div>

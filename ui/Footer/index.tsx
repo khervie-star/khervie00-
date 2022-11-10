@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <>
       <footer
-        className="footer h-[60vh] p-[3em] bg-[#fafafa] dark:bg-[#171717] divide-y"
+        className="footer h-[full] p-[3em] bg-[#fafafa] dark:bg-[#171717] divide-y"
         data-scroll-section
       >
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
@@ -39,28 +39,28 @@ export function Footer() {
               </div>
             </div>
             <div
-              className="font-light text-[20px] md:text-[40px] mb-2 flex flex-row gap-4]]"
+              className="font-light text-[20px] md:text-[40px] mb-2 flex flex-row gp-2 md:gap-4"
               data-scroll=""
             >
               <div
                 data-scroll=""
-                data-scroll-delay="0.18"
-                data-scroll-speed="5"
+                data-scroll-delay="0.28"
+                data-scroll-speed="0"
               >
                 {" "}
                 Let&apos;s{" "}
               </div>{" "}
               <div
                 data-scroll=""
-                data-scroll-delay="0.12"
-                data-scroll-speed="5"
+                data-scroll-delay="0.42"
+                data-scroll-speed="0"
               >
                 work
               </div>{" "}
               <div
                 data-scroll=""
-                data-scroll-delay="0.08"
-                data-scroll-speed="5"
+                data-scroll-delay="0.68"
+                data-scroll-speed="0"
               >
                 together
               </div>
@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <div className="flex justify-between items-center">
-          <div className="font-extralight text-[14px]  md:text-md align-center my-8">
+          <div className="font-extralight text-[14px]  md:text-[18px] align-center my-8">
             &copy; Kwesi Hervie 2022
           </div>
           <div className="flex gap-2 md:gap-6 text-[14px] md:text-[20px]">
