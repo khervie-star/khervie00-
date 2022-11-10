@@ -4,10 +4,10 @@ import { useTheme } from "next-themes";
 import { HTMLMotionProps, motion, Variants } from "framer-motion";
 import React from "react";
 
-// type Merge<P, T> = Omit<P, keyof T> & T;
-// type MotionBoxProps = <"div">
+type Merge<P, T> = Omit<P, keyof T> & T;
+type MotionBoxProps = Merge<any, HTMLMotionProps<"div">>;
 
-export const MotionBox = motion.div;
+export const MotionBox: React.FC<MotionBoxProps> = motion.div;
 
 const Circle = (props: any) => {
   return (

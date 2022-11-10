@@ -11,7 +11,7 @@ const NavigationBar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <div className="w-full h-[70px] box-border fixed left-0 right-0 px-[1em] md:px-[3em] py-[1em] flex items-center justify-between z-[9999] mix-blend-difference ">
+    <div className="w-full h-[70px] box-border fixed left-0 right-0 px-[1em] md:px-[3em] py-[1em] flex items-center justify-between z-[9999] mix-blend-difference        ">
       <div className="">
         <Link
           href="/"
