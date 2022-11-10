@@ -169,12 +169,6 @@ html.has-scroll-dragging {
 }
 
 /* Flip text vertically hover */
-s h1 {
-  font-family: "Muli", sans-serif;
-  font-size: 4em;
-  font-weight: 700;
-}
-
 a {
   color: #333;
   text-decoration: none;
@@ -182,42 +176,46 @@ a {
   outline: none;
 }
 
-a:focus {
-  color: #222;
-}
-
-a.flip-animate {
+.flip-animate {
   perspective: 1000px;
-
-  span {
-    position: relative;
-    display: inline-block;
-    padding: 0;
-    transition: transform 0.3s;
-    transform-origin: 50% 0;
-    transform-style: preserve-3d;
-  }
-
-  span:before {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: attr(data-hover);
-    transition: color 0.3s;
-    transform: rotateX(-90deg);
-    transform-origin: 50% 0;
-    text-align: center;
-  }
-
-  &:hover span,
-  &:focus span {
-    transform: rotateX(90deg) translateY(-22px);
-  }
-
-  &:hover span:before,
-  &:focus span:before {
-    color: #171717;
-  }
 }
+
+.flip-animate span {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  transition: transform 0.3s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+
+.flip-animate span:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  transition: color 0.3s;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  text-align: center;
+  display: none;
+}
+
+.flip-animate:hover span,
+.flip-animate:focus span {
+  transform: rotateX(90deg) translateY(-22px);
+  /* display: none; */
+}
+
+.flip-animate:hover span:before,
+.flip-animate:focus span:before {
+  color: #fafafa;
+  display: block;
+}
+
+/* .flip-animate:hover span,
+.flip-animate:focus span {
+  display: none;
+} */
