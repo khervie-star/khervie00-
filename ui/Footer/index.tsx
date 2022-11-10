@@ -11,7 +11,7 @@ export function Footer() {
       >
         <div className="flex flex-row justify-between items-center">
           <div className="wim">
-            <p
+            <div
               className="font-black text-[64px] mb-2 flex flex-row gap-4"
               data-scroll=""
             >
@@ -37,9 +37,9 @@ export function Footer() {
               >
                 idea?
               </div>
-            </p>
-            <p
-              className="font-light text-[40px] mb-2 flex flex-row gap-4"
+            </div>
+            <div
+              className="font-light text-[40px] mb-2 flex flex-row gap-4]]"
               data-scroll=""
             >
               <div
@@ -64,7 +64,7 @@ export function Footer() {
               >
                 together
               </div>
-            </p>
+            </div>
           </div>
           <div className="flex gap-6 text-[20px] font-thin">
             <Link href="">Khervie00</Link>

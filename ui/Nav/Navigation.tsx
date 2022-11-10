@@ -36,7 +36,7 @@ export const Navigation = () => (
   <>
     <motion.ul
       variants={variants}
-      className="p-[25px] absolute top-[90px] w-screen"
+      className="p-[25px] absolute top-[90px] left-0 w-screen"
     >
       {links.map((value, i) => (
         <MenuItem i={i} key={i} link={value.link} name={value.name} />
@@ -55,7 +55,7 @@ export const Navigation = () => (
       >
         herviek2001@gmail.com
       </a>
-      <div className="flex gap-6 text-[20px] mt-4">
+      <div className="flex gap-6 text-[20px] mt-8">
         <Link href="#">
           <FaTwitter />
         </Link>

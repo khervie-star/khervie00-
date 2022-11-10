@@ -27,7 +27,7 @@ export const MenuToggle = ({ toggle }: navTypes) => {
 
   return (
     <button
-      className="bg-transparent rounded-[50%] h-[50px] w-[50px] absolute right-16 top-4 pointer outline-none border-0 select-none text-red-500"
+      className="bg-transparent rounded-[50%] h-[50px] w-[50px] right-16 top-4 pointer outline-none border-0 select-none z-[9999]"
       onClick={toggle}
     >
       <svg width="23" height="23" viewBox="0 0 23 23">

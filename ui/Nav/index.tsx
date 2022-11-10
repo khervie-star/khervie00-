@@ -6,6 +6,7 @@ import { useDimensions } from "../../hooks/useDimension";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
 import Link from "next/link";
+import ThemeToggleButton from "../Buttons/ThemeToggleButton";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -27,8 +28,8 @@ const sidebar = {
   },
 };
 
-const Nav = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+const Nav = ({ isOpen }: any) => {
+  // const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(1000);
 
@@ -39,20 +40,15 @@ const Nav = () => {
         animate={isOpen ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-        className="absolute top-0 left-0 bottom-0 w-screen"
+        // className="absolute top-0 left-0 bottom-0 w-screen z-[9999]"
       >
         <motion.div
-          className="absolute top-0 left-0 bottom-0 w-screen bg-[#fafafa] dark:bg-[#171717]"
+          className="absolute top-20 left-0 bottom-0 w-screen bg-[#fafafa] dark:bg-[#171717] z-[9999]"
           variants={sidebar}
         />
         <Navigation />
-        <MenuToggle toggle={() => toggleOpen()} />
-        <Link
-          href="/"
-          className="font-medium text-[32px] mx-4 my-12 px-2 py-12 cursor-pointer"
-        >
-          Khervie00
-        </Link>
+
+        {/* <MenuToggle toggle={() => toggleOpen()} /> */}
       </motion.nav>
     </div>
   );

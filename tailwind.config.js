@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   // future: {
@@ -17,9 +17,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // fontFamily: {
-      //   'sans': ['Proxima Nova', ...defaultTheme.fontFamily.sans],
-      // },
+      fontFamily: {
+        varela_round: ['"Varela Round" sans-serif ',],
+        comfortaa: ['"Comfortaa" cursive'],
+        fredoka_one: ['"Fredoka One" cursive'],
+        anton: ['"Anton" sans-serif'],
+      }
     },
   },
   plugins: [],
