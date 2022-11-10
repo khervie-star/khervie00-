@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center font-varela_round relative  dark:bg-[#171717] bg-[#fafafa]"
+        className="py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center relative  dark:bg-[#171717] bg-[#fafafa]"
         data-scroll-section
       >
         <div className="md:w-[50%] flex flex-col place-content-center text-center h-[100vh] px-[2rem] relative">
