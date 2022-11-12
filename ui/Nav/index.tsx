@@ -35,21 +35,21 @@ const Nav = ({ isOpen }: any) => {
 
   return (
     <div>
-      <motion.nav
+      <motion.div
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-        // className="absolute top-0 left-0 bottom-0 w-screen z-[9999]"
+        className="bg-[#fafafa] dark:bg-[#171717] absolute top-20 left-0 bottom-0 w-screen z-50"
       >
         <motion.div
-          className="absolute top-20 left-0 bottom-0 w-screen bg-[#fafafa] dark:bg-[#171717] z-[9999]"
+          className="absolute top-20 left-0 bottom-0 w-screen bg-[#fafafa] dark:bg-[#171717]"
           variants={sidebar}
         />
         <Navigation />
 
         {/* <MenuToggle toggle={() => toggleOpen()} /> */}
-      </motion.nav>
+      </motion.div>
     </div>
   );
 };

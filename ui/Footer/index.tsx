@@ -10,7 +10,7 @@ export function Footer() {
         data-scroll-section
       >
         <div className="flex flex-col md:flex-row justify-between items-center w-full">
-          <div className="wim">
+          <div className="wim hover:text-red-500 cursor-pointer">
             <div
               className="font-black text-[32px] md:text-[64px] mb-2 flex flex-row gap-2 md:gap-4"
               data-scroll=""
@@ -19,6 +19,7 @@ export function Footer() {
                 data-scroll=""
                 data-scroll-delay="0.18"
                 data-scroll-speed="5"
+                data-scroll-position="bottom"
               >
                 {" "}
                 Have{" "}
@@ -27,6 +28,7 @@ export function Footer() {
                 data-scroll=""
                 data-scroll-delay="0.12"
                 data-scroll-speed="5"
+                data-scroll-position="bottom"
               >
                 an
               </div>{" "}
@@ -34,6 +36,7 @@ export function Footer() {
                 data-scroll=""
                 data-scroll-delay="0.08"
                 data-scroll-speed="5"
+                data-scroll-position="bottom"
               >
                 idea?
               </div>
@@ -45,7 +48,8 @@ export function Footer() {
               <div
                 data-scroll=""
                 data-scroll-delay="0.28"
-                data-scroll-speed="0"
+                data-scroll-speed="5"
+                data-scroll-position="bottom"
               >
                 {" "}
                 Let&apos;s{" "}
@@ -53,14 +57,16 @@ export function Footer() {
               <div
                 data-scroll=""
                 data-scroll-delay="0.42"
-                data-scroll-speed="0"
+                data-scroll-speed="5"
+                data-scroll-position="bottom"
               >
                 work
               </div>{" "}
               <div
                 data-scroll=""
                 data-scroll-delay="0.68"
-                data-scroll-speed="0"
+                data-scroll-speed="5"
+                data-scroll-position="bottom"
               >
                 together
               </div>

@@ -75,8 +75,8 @@ export const Navigation = () => (
 
 const links = [
   { name: "Home", link: "/" },
-  { name: "About", link: "#about-me" },
-  { name: "Projects", link: "#projects" },
-  { name: "Stack", link: "#stack" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "about-me" },
+  { name: "Projects", link: "projects" },
+  { name: "Stack", link: "stack" },
+  { name: "Contact", link: "contact" },
 ];
