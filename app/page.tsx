@@ -3,19 +3,21 @@ import Nav from "../ui/Nav";
 import ThemeToggleButton from "../ui/Buttons/ThemeToggleButton";
 import clsx from "clsx";
 import Link from "next/link";
+import Image from "next/image";
+import ReactPlayer from "react-player";
 import NavigationBar from "../ui/Nav/NavigationBar";
 
 export default function Home() {
   return (
     <>
       <div
-        className="w-screen py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center relative  dark:bg-[#171717] bg-[#fafafa]"
+        className="w-screen py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center relative  dark:bg-[#171717] bg-[#fafafa] scroll-smooth"
         data-scroll-section
       >
         <div className="w-full flex items-center  h-[100vh] px-[3rem] relative box-border">
           <div className=" mt-[-100px]">
             <h1
-              className="text-[70px] md:text-[150px] font-bold mb-0 p-0  leading-[70px] md:leading-[120px]"
+              className="text-[80px] md:text-[170px] font-bold mb-0 p-0  leading-[70px] md:leading-[150px]"
               data-scroll
               data-scroll-speed="3"
               data-scroll-position="top"
@@ -23,7 +25,7 @@ export default function Home() {
               Kwesi Hervie
             </h1>
             <h1
-              className="text-[40px] md:text-[75px] my-0 p-0  text-gray-500 dark:text-gray-400"
+              className="text-[50px] md:text-[85px] my-0 p-0  text-gray-500 dark:text-gray-400"
               data-scroll
               data-scroll-speed="-2"
               data-scroll-position="top"
@@ -33,33 +35,79 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="pt-8 absolute bottom-14 left-0 text-center right-0 my-3 mx-auto w-full">
-            <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400 ">
+          <a
+            className="pt-8 absolute bottom-14 left-0 text-center right-0 my-3 mx-auto w-full"
+            href="#about-me"
+          >
+            <h3 className="text-lg font-medium text-gray-500 dark:text-gray-400">
               Learn more about what I do.
             </h3>
 
             <AngleDownAnimationButton />
-          </div>
+          </a>
         </div>
-        <div className=" w-full relative">
+        <div className=" w-full relative" id="about-me">
           <div
             className="absolute bottom-50 left-60  text-[30px] md:text-[200px]  text-gray-200 dark:text-gray-700 -z-10"
             data-scroll
-            data-scroll-speed="2"
+            data-scroll-speed="5"
             data-scroll-direction="horizontal"
           >
             Khervie00
           </div>
-          <div className="p-10 text-[15px] md:text-[30px] md:my-20 w-full md:w-1/2 float-right z-50">
-            <div>
-              HI, I&apos;m Kwesi Hervie.
-              <br />
-              I&apos;m a budding developer from Nigeria. She works for a
-              chemical company and is self-taught in markup, front-end and web
-              design. I love to feel the joy when I act until I can do the
-              impossible and achieve it.
+          <div className="p-10 text-[18px] md:text-[30px] md:my-20 w-full flex flex-col md:flex-row justify-around items-center z-50">
+            <div
+              className="md:basis-1/2 w-full relative p-3 md:p-[10rem]"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="horizontal"
+            >
+              <div
+                style={{
+                  width: "100%",
+                  height: "0",
+                  paddingBottom: "56%",
+                  position: "relative",
+                }}
+              >
+                <iframe
+                  src="https://giphy.com/embed/ZbIADknDu7C4lKolgb"
+                  width="100%"
+                  height="100%"
+                  style={{ position: "absolute" }}
+                  frameBorder="0"
+                  className="giphy-embed"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p>
+                <a href="https://giphy.com/gifs/rickandmorty-season-2-adult-swim-rick-and-morty-ZbIADknDu7C4lKolgb">
+                  via GIPHY
+                </a>
+              </p>
             </div>
-            <button>Learn more</button>
+            <div
+              className="basis-1/2"
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-position="top"
+            >
+              HI, I&apos;m Kwesi Hervie
+              <br />
+              <span className="font-italic text-[18px] text-red-500">
+                &quot;Khervie00 for short.&quot;
+              </span>
+              <br />
+              I&apos;m a budding developer from Nigeria. I am self taught in web
+              technologies and other scripting languages. I code for fun and
+              stuff
+              <button
+                className="hover-underline-animation flip-animate dark:text-[#fafafa] text-[#171717]"
+                data-hover="About Me"
+              >
+                <span data-hover="About Me">Learn more</span>
+              </button>
+            </div>
           </div>
         </div>
         {/* <section
@@ -116,8 +164,12 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <div className="about-link dark:bg-white bg-[#171717] text-white text-[64px] dark:text-black h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
-          <p className="hover-underline-animation">About Me</p>
+        <div className=" dark:bg-white bg-[#171717] text-white text-[64px] dark:text-black h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
+          <p className="flip-animate inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 h-[3px] after:bottom-0 after:left-0 after:bg-white after:dark:bg-[#171717]  after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-[1] hover:after:origin-bottom-left">
+            <span className="text-inherit" data-hover="About Me">
+              About Me
+            </span>
+          </p>
         </div>
       </div>
     </>
