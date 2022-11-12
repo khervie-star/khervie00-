@@ -12,85 +12,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&amp;family=Shrikhand&amp;display=swap");
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-  .flip-animate:hover span:before,
-  .flip-animate:focus span:before {
-    color: red;
-    display: block;
-  }
-}
-
-/* Hover Underline */
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  /* color: #0087ca; */
-}
-
-.hover-underline-animation::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #fff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.about-link:hover .hover-underline-animation::after,
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#fff, #fff);
-  background-size: 0 2px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.4s ease-in-out;
-}
-
-.link-underline-black {
-  /* background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#f2c, #f2c); */
-  background-image: linear-gradient(transparent, transparent), #fafafa;
-}
-
-.link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 100%;
-}
-
-/* Locomotive scroll css */
 /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 html.has-scroll-smooth {
   overflow: hidden;
@@ -174,9 +95,86 @@ html.has-scroll-dragging {
   bottom: 0;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+  .flip-animate:hover span:before,
+  .flip-animate:focus span:before {
+    color: red;
+    display: block;
+  }
+}
+
+/* Hover Underline */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  /* color: #0087ca; */
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.about-link:hover .hover-underline-animation::after,
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out;
+}
+
+.link-underline-black {
+  /* background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#f2c, #f2c); */
+  background-image: linear-gradient(transparent, transparent), #fafafa;
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+}
+
 /* Flip text vertically hover */
 a {
-  color: #333;
   text-decoration: none;
   transition: color 0.3s;
   outline: none;

@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 import NavigationBar from "../ui/Nav/NavigationBar";
+import { Footer } from "../ui/Footer";
 
 export default function Home() {
   return (
@@ -165,13 +166,14 @@ export default function Home() {
           </div>
         </section> */}
         <div className=" dark:bg-white bg-[#171717] text-white text-[64px] dark:text-black h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
-          <p className="flip-animate inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 h-[3px] after:bottom-0 after:left-0 after:bg-white after:dark:bg-[#171717]  after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-[1] hover:after:origin-bottom-left">
-            <span className="text-inherit" data-hover="About Me">
+          <p className=" group flip-animate inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 h-[3px] after:bottom-0 after:left-0 after:bg-white after:dark:bg-[#171717]  after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-[1] hover:after:origin-bottom-left">
+            <span className="" data-hover="About Me">
               About Me
             </span>
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

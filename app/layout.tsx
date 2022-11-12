@@ -29,7 +29,7 @@ export default function RootLayout({
             {/* <AnimatedCursor /> */}
             <NavigationBar />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </LocomotiveScroll>
         </ThemeContextProvider>
       </body>
