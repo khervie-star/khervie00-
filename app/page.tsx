@@ -59,9 +59,9 @@ export default function Home() {
           <div className="p-10 text-[18px] md:text-[30px] md:my-20 w-full flex flex-col md:flex-row justify-around items-center z-50">
             <div
               className="md:basis-1/2 w-full relative p-3 md:p-[10rem]"
-              data-scroll
-              data-scroll-speed="1"
-              data-scroll-direction="horizontal"
+              // data-scroll
+              // data-scroll-speed="1"
+              // data-scroll-direction="horizontal"
             >
               <div
                 style={{
@@ -91,13 +91,12 @@ export default function Home() {
               className="basis-1/2"
               data-scroll
               data-scroll-speed="1"
-              data-scroll-position="top"
+              data-scroll-position="center"
             >
               HI, I&apos;m Kwesi Hervie
-              <br />
-              <span className="font-italic text-[18px] text-red-500">
+              {/* <span className="font-italic text-[18px] text-red-500">
                 &quot;Khervie00 for short.&quot;
-              </span>
+              </span> */}
               <br />
               I&apos;m a budding developer from Nigeria. I am self taught in web
               technologies and other scripting languages. I code for fun and
@@ -165,8 +164,11 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <div className=" dark:bg-white bg-[#171717] text-white text-[64px] dark:text-black h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
-          <p className=" group flip-animate inline-block relative after:content-[''] after:absolute after:w-full after:scale-x-0 h-[3px] after:bottom-0 after:left-0 after:bg-white after:dark:bg-[#171717]  after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-[1] hover:after:origin-bottom-left">
+        <div className=" dark:bg-white bg-[#171717] text-[64px] h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
+          <p
+            className="
+            group flip-animate inline-block"
+          >
             <span className="" data-hover="About Me">
               About Me
             </span>

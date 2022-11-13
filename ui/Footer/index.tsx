@@ -9,8 +9,8 @@ export function Footer() {
         className="footer h-[full] p-[3em] bg-[#fafafa] dark:bg-[#171717] divide-y"
         data-scroll-section
       >
-        <div className="flex flex-col md:flex-row  items-start md:items-center w-full">
-          <div className=" hover:text-red-500 cursor-pointer">
+        <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between">
+          <div className="cursor-pointer">
             <div
               className="font-black text-[32px] md:text-[64px] mb-2 flex flex-row gap-2 md:gap-4"
               data-scroll=""
@@ -72,12 +72,14 @@ export function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex gap-3 md:gap-6 text-[20px] font-thin dark:text-[#fafafa] text-[#171717]  w-full flex-wrap">
-            <Link href="">Khervie00</Link>
-            <Link href="/about">About </Link>
-            <Link href="/about#projects">Projects</Link>
-            <Link href="">Skills</Link>
-            <Link href="/contact">Contact</Link>
+          <div>
+            <div className="flex gap-3 md:gap-6 text-[20px] font-thin dark:text-[#fafafa] text-[#171717]  w-full flex-wrap">
+              <Link href="">Khervie00</Link>
+              <Link href="/about">About </Link>
+              <Link href="/about#projects">Projects</Link>
+              <Link href="">Skills</Link>
+              <Link href="/contact">Contact</Link>
+            </div>
           </div>
         </div>
 

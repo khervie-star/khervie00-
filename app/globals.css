@@ -111,21 +111,6 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-  .flip-animate:hover span:before,
-  .flip-animate:focus span:before {
-    color: red;
-    display: block;
-  }
-}
-
 /* Hover Underline */
 .hover-underline-animation {
   display: inline-block;
@@ -184,6 +169,7 @@ a {
   perspective: 1000px;
 }
 
+a,
 .flip-animate span {
   position: relative;
   display: inline-block;
@@ -191,6 +177,7 @@ a {
   transition: transform 0.3s;
   transform-origin: 50% 0;
   transform-style: preserve-3d;
+  color: #fafafa;
 }
 
 .flip-animate span:before {
@@ -210,7 +197,6 @@ a {
 .flip-animate:hover span,
 .flip-animate:focus span {
   transform: rotateX(90deg) translateY(-22px);
-  /* display: none; */
 }
 
 .flip-animate:hover span:before,
@@ -219,7 +205,10 @@ a {
   display: block;
 }
 
-/* .flip-animate:hover span,
-.flip-animate:focus span {
-  display: none;
-} */
+@media (prefers-color-scheme: light) {
+  .flip-animate:hover span:before,
+  .flip-animate:focus span:before {
+    color: #fafafa !important;
+    display: block;
+  }
+}

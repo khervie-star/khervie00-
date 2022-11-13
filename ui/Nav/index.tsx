@@ -38,9 +38,10 @@ const Nav = ({ isOpen }: any) => {
       <motion.div
         initial={false}
         animate={isOpen ? "open" : "closed"}
+        // animate="open"
         custom={height}
         ref={containerRef}
-        className="bg-[#fafafa] dark:bg-[#171717] absolute top-20 left-0 bottom-0 w-screen z-50"
+        // className="bg-[#fafafa] dark:bg-[#171717] absolute top-20 left-0 bottom-0 w-screen h-screen z-50"
       >
         <motion.div
           className="absolute top-20 left-0 bottom-0 w-screen bg-[#fafafa] dark:bg-[#171717]"
