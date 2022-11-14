@@ -10,7 +10,7 @@ export function Footer() {
         data-scroll-section
       >
         <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between">
-          <div className="cursor-pointer">
+          <div className="cursor-pointer mb-4 ">
             <div
               className="font-black text-[32px] md:text-[64px] mb-2 flex flex-row gap-2 md:gap-4"
               data-scroll=""
@@ -42,7 +42,7 @@ export function Footer() {
               </div>
             </div>
             <div
-              className="font-light text-[20px] md:text-[40px] mb-2 flex flex-row gp-2 md:gap-4"
+              className="font-light text-[20px] md:text-[40px] mb-2 flex flex-row gap-2 md:gap-4"
               data-scroll=""
             >
               <div
@@ -74,11 +74,30 @@ export function Footer() {
           </div>
           <div>
             <div className="flex gap-3 md:gap-6 text-[20px] font-thin dark:text-[#fafafa] text-[#171717]  w-full flex-wrap">
-              <Link href="">Khervie00</Link>
-              <Link href="/about">About </Link>
-              <Link href="/about#projects">Projects</Link>
-              <Link href="">Skills</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/" className="dark:text-[#fafafa] text-[#171717]">
+                Khervie00
+              </Link>
+              <Link
+                href="/about"
+                className="dark:text-[#fafafa] text-[#171717]"
+              >
+                About{" "}
+              </Link>
+              <Link
+                href="/about#projects"
+                className="dark:text-[#fafafa] text-[#171717]"
+              >
+                Projects
+              </Link>
+              <Link href="" className="dark:text-[#fafafa] text-[#171717]">
+                Skills
+              </Link>
+              <Link
+                href="/contact"
+                className="dark:text-[#fafafa] text-[#171717]"
+              >
+                Contact
+              </Link>
             </div>
           </div>
         </div>

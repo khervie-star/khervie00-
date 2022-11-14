@@ -7,7 +7,6 @@ import LocomotiveScroll from "../providers/LocomotiveScroll";
 import Link from "next/link";
 import Nav from "../ui/Nav";
 import NavigationBar from "../ui/Nav/NavigationBar";
-import Chakra from "../providers/Chakra";
 
 const myFont = localFont({ src: "../lib/font/ProximaSoft-Bold.woff2" });
 

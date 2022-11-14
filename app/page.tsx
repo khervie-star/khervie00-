@@ -7,30 +7,8 @@ import Image from "next/image";
 import ReactPlayer from "react-player";
 import NavigationBar from "../ui/Nav/NavigationBar";
 import { Footer } from "../ui/Footer";
-import {
-  TbBrandHtml5,
-  TbBrandCss3,
-  TbBrandReactNative,
-  TbBrandNextjs,
-} from "react-icons/tb";
-import {
-  SiTailwindcss,
-  SiTypescript,
-  SiJavascript,
-  SiCplusplus,
-  SiPython,
-  SiReact,
-  SiMaterialui,
-  SiRedux,
-  SiPhp,
-  SiLaravel,
-  SiStyledcomponents,
-  SiLinux,
-  SiWeb3Dotjs,
-  SiBootstrap,
-  SiWordpress,
-} from "react-icons/si";
-import { CgCPlusPlus } from "react-icons/cg";
+
+import { stack } from "../lib/data";
 
 export default function Home() {
   return (
@@ -129,141 +107,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
-          <h1>Stack</h1>
-          <div className="flex items-center justify-center flex-row flex-wrap gap-8 text-[24px] text-slate-600 text-center">
-            <div className="flex flex-col items-center justify-center">
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <TbBrandHtml5 />
+        <div className="my-4 ">
+          <h1 className="text-[84px] text-center w-full">Stack</h1>
+          <div className="flex items-center justify-center flex-row flex-wrap gap-16 text-[24px] text-slate-600 dark:text-slate-500 text-center p-20">
+            {stack.map((skill, i) => (
+              <div
+                className="flex flex-col items-center justify-center"
+                key={i}
+              >
+                <div>{skill.name}</div>
+                <div className="text-[40px]">
+                  <skill.icon />
+                </div>
               </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <TbBrandCss3 />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiTailwindcss />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiTypescript />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiJavascript />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <CgCPlusPlus />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiCplusplus />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiPython />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiReact />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div>
-                <TbBrandReactNative />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <TbBrandNextjs />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiMaterialui />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiRedux />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiPhp />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiLaravel />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiStyledcomponents />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiLinux />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiWeb3Dotjs />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiBootstrap />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiWordpress />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiStyledcomponents />
-              </div>
-            </div>
-            <div>
-              <div>HTML</div>
-              <div className="text-[40px]">
-                <SiStyledcomponents />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -278,20 +135,18 @@ export default function Home() {
           </p>
         </div>
 
-        <section
+        {/* <section
           id="about-section"
           className="py-40 bg-red-500 w-full relative"
-          // data-scroll-section
         >
+          <h1 className="text-[84px] text-center w-full">Stack</h1>
+
           <div className="container px-5 mx-auto">
             <div id="about" className="lg:grid grid-cols-2 gap-4 items-start">
               <h2
                 className="text-5xl font-extrabold"
                 data-scroll
-                // data-scroll-direction="horizontal"
-                // data-scroll-speed="1"
-                // data-scroll-position="center"
-
+                data-scroll-position="center"
                 data-scroll-sticky
                 data-scroll-target="#about"
               >
@@ -329,7 +184,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
       <Footer />
     </>
