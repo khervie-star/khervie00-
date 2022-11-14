@@ -7,6 +7,30 @@ import Image from "next/image";
 import ReactPlayer from "react-player";
 import NavigationBar from "../ui/Nav/NavigationBar";
 import { Footer } from "../ui/Footer";
+import {
+  TbBrandHtml5,
+  TbBrandCss3,
+  TbBrandReactNative,
+  TbBrandNextjs,
+} from "react-icons/tb";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiJavascript,
+  SiCplusplus,
+  SiPython,
+  SiReact,
+  SiMaterialui,
+  SiRedux,
+  SiPhp,
+  SiLaravel,
+  SiStyledcomponents,
+  SiLinux,
+  SiWeb3Dotjs,
+  SiBootstrap,
+  SiWordpress,
+} from "react-icons/si";
+import { CgCPlusPlus } from "react-icons/cg";
 
 export default function Home() {
   return (
@@ -57,12 +81,7 @@ export default function Home() {
             Khervie00
           </div>
           <div className="p-10 text-[18px] md:text-[30px] md:my-20 w-full flex flex-col md:flex-row justify-around items-center z-50">
-            <div
-              className="md:basis-1/2 w-full relative p-3 md:p-[10rem]"
-              // data-scroll
-              // data-scroll-speed="1"
-              // data-scroll-direction="horizontal"
-            >
+            <div className="md:basis-1/2 w-full relative p-3 md:p-[10rem]">
               <div
                 style={{
                   width: "100%",
@@ -110,60 +129,144 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <section
-          className="c-section -fixed"
-          data-scroll-section
-          data-persistent
-        >
-          <div className="o-container" id="fixed-elements">
-            <div className="o-layout">
-              <div className="o-layout_item u-2/5@from-medium">
-                <div
-                  className="c-section_infos -padding"
-                  data-scroll
-                  data-scroll-sticky
-                  data-scroll-target="#fixed-elements"
-                >
-                  <div
-                    className="c-section_infos_inner"
-                    data-scroll
-                    data-scroll-offset="200"
-                  >
-                    <h3>
-                      04. <br />
-                      Fixed elements
-                    </h3>
-                    <div className="c-sections_infos_text u-text">
-                      <p>
-                        Create slides that stick and untick to the viewport
-                        while scrolling through.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <div>
+          <h1>Stack</h1>
+          <div className="flex items-center justify-center flex-row flex-wrap gap-8 text-[24px] text-slate-600 text-center">
+            <div className="flex flex-col items-center justify-center">
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <TbBrandHtml5 />
               </div>
-              <div className="o-layout_item u-3/5@from-medium">
-                <div
-                  className="c-fixed_wrapper"
-                  data-scroll
-                  data-scroll-call="dynamicBackground"
-                  data-scroll-repeat
-                >
-                  <div className="c-fixed_target" id="fixed-target"></div>
-                  <div
-                    className="c-fixed"
-                    data-scroll
-                    data-scroll-sticky
-                    data-scroll-target="#fixed-target"
-                    style={{
-                      backgroundImage: "url('dist/images/locomotive04.jpg')",
-                    }}
-                  ></div>
-                </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <TbBrandCss3 />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiTailwindcss />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiTypescript />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiJavascript />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <CgCPlusPlus />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiCplusplus />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiPython />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiReact />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div>
+                <TbBrandReactNative />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <TbBrandNextjs />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiMaterialui />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiRedux />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiPhp />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiLaravel />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiStyledcomponents />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiLinux />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiWeb3Dotjs />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiBootstrap />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiWordpress />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiStyledcomponents />
+              </div>
+            </div>
+            <div>
+              <div>HTML</div>
+              <div className="text-[40px]">
+                <SiStyledcomponents />
               </div>
             </div>
           </div>
-        </section> */}
+        </div>
+
         <div className=" dark:bg-white bg-[#171717] text-[64px] h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
           <p
             className="
@@ -174,6 +277,59 @@ export default function Home() {
             </span>
           </p>
         </div>
+
+        <section
+          id="about-section"
+          className="py-40 bg-red-500 w-full relative"
+          // data-scroll-section
+        >
+          <div className="container px-5 mx-auto">
+            <div id="about" className="lg:grid grid-cols-2 gap-4 items-start">
+              <h2
+                className="text-5xl font-extrabold"
+                data-scroll
+                // data-scroll-direction="horizontal"
+                // data-scroll-speed="1"
+                // data-scroll-position="center"
+
+                data-scroll-sticky
+                data-scroll-target="#about"
+              >
+                About
+              </h2>
+              <div className="text-xl pt-4 lg:pt-0 text-black">
+                <p className="mb-8">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  pretium, ante sed lacinia ultricies, sapien massa ultricies
+                  erat, eu tristique justo est ut tortor. In nibh est, porttitor
+                  vulputate erat et, faucibus volutpat felis. Curabitur eleifend
+                  nisi quis consectetur euismod. Morbi ac condimentum ante.
+                  Aliquam euismod sodales arcu et iaculis. Cras porttitor nisl
+                  felis, eget interdum magna cursus et. Curabitur vehicula
+                  dignissim ornare.
+                </p>
+                <p className="mb-8">
+                  Cras lacinia sit amet justo ut maximus. Integer sapien felis,
+                  gravida a commodo et, porttitor non libero. Maecenas lacinia
+                  accumsan eros eu dapibus. Mauris dolor odio, vulputate vitae
+                  purus vitae, tincidunt egestas orci. Maecenas sollicitudin
+                  fringilla justo, id tempus metus elementum sit amet. Nullam
+                  vestibulum mauris vitae condimentum sagittis. Suspendisse sed
+                  purus vel neque ullamcorper ornare egestas vel ligula. Duis ac
+                  mattis odio. Aliquam sodales turpis nec diam maximus, nec
+                  fermentum massa mollis.
+                </p>
+                <p>
+                  Praesent finibus egestas velit, vitae tristique leo luctus sit
+                  amet. Vivamus eu facilisis neque, a venenatis mi. Vestibulum
+                  ultricies venenatis arcu sit amet fringilla. Curabitur non
+                  tincidunt sem. Sed quis quam ut nulla tincidunt dapibus quis
+                  ac lorem. Nulla lobortis ac metus ut molestie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </>
