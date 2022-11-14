@@ -67,26 +67,26 @@ export const stack = [
   //   name: "PHP",
   //   icon: SiPhp,
   // },
-  {
-    name: "Laravel",
-    icon: SiLaravel,
-  },
-  {
-    name: "MaterialUI",
-    icon: SiMaterialui,
-  },
-  {
-    name: "Styled-components",
-    icon: SiStyledcomponents,
-  },
+  // {
+  //   name: "Laravel",
+  //   icon: SiLaravel,
+  // },
+  // {
+  //   name: "MaterialUI",
+  //   icon: SiMaterialui,
+  // },
+  // {
+  //   name: "Styled-components",
+  //   icon: SiStyledcomponents,
+  // },
   {
     name: "C++",
     icon: SiCplusplus,
   },
-  {
-    name: "Python",
-    icon: SiPython,
-  },
+  // {
+  //   name: "Python",
+  //   icon: SiPython,
+  // },
   {
     name: "Web3.js",
     icon: SiWeb3Dotjs,

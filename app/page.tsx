@@ -109,7 +109,7 @@ export default function Home() {
         </div>
         <div className="my-4 ">
           <h1 className="text-[84px] text-center w-full">Stack</h1>
-          <div className="flex items-center justify-center flex-row flex-wrap gap-16 text-[24px] text-slate-600 dark:text-slate-500 text-center p-20">
+          <div className="flex items-center justify-center flex-row flex-wrap gap-8 md:gap-16 text-[24px] text-slate-600 dark:text-slate-500 text-center p-10 md:p-20">
             {stack.map((skill, i) => (
               <div
                 className="flex flex-col items-center justify-center"
