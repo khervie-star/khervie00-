@@ -85,7 +85,7 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <div className="flex gap-3 md:gap-6 text-[20px] font-thin dark:text-[#fafafa] text-[#171717]  w-full flex-wrap">
+            <div className="flex gap-3 md:gap-6 text-[16px] md:text-[20px] font-thin dark:text-[#fafafa] text-[#171717]  w-full flex-wrap">
               <Link
                 href="/"
                 className="dark:text-[#fafafa] text-[#171717] cursor-pointer"

@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <div className=" w-full relative" id="about-me">
           <div
-            className="absolute bottom-50 left-60  text-[30px] md:text-[200px]  text-gray-200 dark:text-gray-700 -z-10"
+            className="absolute bottom-50 left-60  text-[80px] md:text-[200px]  text-gray-200 dark:text-gray-700 -z-10"
             data-scroll
             data-scroll-speed="5"
             data-scroll-direction="horizontal"
@@ -126,7 +126,7 @@ export default function Home() {
         </div>
 
         <Link
-          className="group flip-animate about-link  text-[#fafafa] dark:text-[#171717] dark:bg-white bg-[#171717] text-[64px] h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  dark:child-span-before:text-[#171717] child-span-before:text-[#fafafa] child-span-before:block"
+          className="group flip-animate about-link  text-[#fafafa] dark:text-[#171717] dark:bg-white bg-[#171717] text-[64px] h-[50vh] md:h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  dark:child-span-before:text-[#171717] child-span-before:text-[#fafafa] child-span-before:block"
           href="/about"
         >
           <div className=" hover-underline-animation after:bg-[#fafafa] dark:after:bg-[#171717] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left">

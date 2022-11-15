@@ -5,7 +5,10 @@ import Khervie00 from "../../public/assets/khervie00.jpg";
 const Page = () => {
   return (
     <div>
-      <div className="h-[90vh] md:h-screen lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative">
+      <div
+        className="h-[90vh] md:h-screen lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative"
+        data-scroll-section
+      >
         <div className=" flex md:items-start md:h-full">
           <h1 className="text-[100px] md:text-[120px] text-left md:text-center mt-20 my-8 md:my-20 leading-[80px] md:leading-normal">
             About Me
