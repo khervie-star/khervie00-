@@ -22,7 +22,10 @@ module.exports = {
         comfortaa: ['"Comfortaa" cursive'],
         fredoka_one: ['"Fredoka One" cursive'],
         anton: ['"Anton" sans-serif'],
-      }
+      },
+      backgroundImage: {
+        'khervie': "url('../public/assets/khervie00.jpg')",
+      },
     },
   },
   plugins: [

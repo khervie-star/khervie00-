@@ -132,7 +132,7 @@ export function Footer() {
             <Link href="https://github.com/khervie-star">
               <FaGithub />
             </Link>
-            <Link href="">
+            <Link href="https://wa.me/2348180746707?text=Hi%20Khervie00">
               <FaWhatsapp />
             </Link>
           </div>
