@@ -1,8 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { ReactNode } from "react";
 import { FaGithub, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export function Footer() {
+  const scrollToTop = () => {
+    if (typeof window !== undefined) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+        /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+      });
+    }
+  };
   return (
     <>
       <footer
@@ -74,7 +86,11 @@ export function Footer() {
           </div>
           <div>
             <div className="flex gap-3 md:gap-6 text-[20px] font-thin dark:text-[#fafafa] text-[#171717]  w-full flex-wrap">
-              <Link href="/" className="dark:text-[#fafafa] text-[#171717]">
+              <Link
+                href="/"
+                className="dark:text-[#fafafa] text-[#171717] cursor-pointer"
+                // onClick={scrollToTop}
+              >
                 Khervie00
               </Link>
               <Link

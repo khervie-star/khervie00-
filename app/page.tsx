@@ -16,6 +16,7 @@ export default function Home() {
       <div
         className="w-screen py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center relative  dark:bg-[#171717] bg-[#fafafa] scroll-smooth"
         data-scroll-section
+        id="header"
       >
         <div className="w-full flex items-center  h-[100vh] px-[3rem] relative box-border">
           <div className=" mt-[-100px]">
@@ -124,16 +125,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" dark:bg-white bg-[#171717] text-[64px] h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer">
-          <p
-            className="
-            group flip-animate inline-block"
-          >
-            <span className="" data-hover="About Me">
-              About Me
-            </span>
-          </p>
-        </div>
+        <Link
+          className="group flip-animate about-link  text-[#fafafa] dark:text-[#171717] dark:bg-white bg-[#171717] text-[64px] h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  dark:child-span-before:text-[#171717] child-span-before:text-[#fafafa] child-span-before:block"
+          href="/about"
+        >
+          <div className=" hover-underline-animation after:bg-[#fafafa] dark:after:bg-[#171717] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left">
+            <span data-hover="About Me">About Me</span>
+          </div>
+        </Link>
 
         {/* <section
           id="about-section"

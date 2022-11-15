@@ -25,5 +25,11 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant('child', '& > *');
+      addVariant('child-span-before', ' &:hover span:before, &:focus span:before ');
+      addVariant('child-hover', '& > *:hover');
+    }
+  ],
 }

@@ -113,9 +113,9 @@ a {
 
 /* Hover Underline */
 .hover-underline-animation {
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
-  /* color: #0087ca; */
+  /* color: #0087ca;  */
 }
 
 .hover-underline-animation::after {
@@ -123,15 +123,15 @@ a {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 3px;
+  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
-.about-link:hover .hover-underline-animation::after,
+/* .about-link:hover .hover-underline-animation::after, */
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
@@ -154,22 +154,21 @@ a {
 }
 
 .link-underline:hover {
-  background-size: 100% 3px;
+  background-size: 100% 2px;
   background-position: 0 100%;
 }
 
 /* Flip text vertically hover */
-a {
+/* a {
   text-decoration: none;
   transition: color 0.3s;
   outline: none;
-}
+} */
 
 .flip-animate {
   perspective: 1000px;
 }
 
-a,
 .flip-animate span {
   position: relative;
   display: inline-block;
@@ -177,7 +176,6 @@ a,
   transition: transform 0.3s;
   transform-origin: 50% 0;
   transform-style: preserve-3d;
-  color: #fafafa;
 }
 
 .flip-animate span:before {
@@ -199,16 +197,8 @@ a,
   transform: rotateX(90deg) translateY(-22px);
 }
 
-.flip-animate:hover span:before,
+/* .flip-animate:hover span:before,
 .flip-animate:focus span:before {
-  color: #fafafa;
+  color: #b13636;
   display: block;
-}
-
-@media (prefers-color-scheme: light) {
-  .flip-animate:hover span:before,
-  .flip-animate:focus span:before {
-    color: #fafafa !important;
-    display: block;
-  }
-}
+} */

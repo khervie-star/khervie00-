@@ -24,7 +24,7 @@ const NavigationBar = () => {
       <div className="flex items-center gap-3 md:gap-8">
         {/* <MenuToggle toggle={() => toggleOpen()} /> */}
         <div
-          className="hover-underline-animation flip-animate cursor-pointer text-[20px] md:text-[32px]"
+          className="hover-underline-animation flip-animate cursor-pointer text-[20px] md:text-[32px] child-span-before:block"
           onClick={() => toggleOpen()}
           data-hover="MENU"
         >
