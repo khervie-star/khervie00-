@@ -30,7 +30,7 @@ const Page = () => {
         </h1>
         <div className="p-10 md:p-20 flex flex-col-reverse md:flex-row">
           <div className="basis-1/2">
-            <div className="mb-0 md:mb-[3em] text-[40px]">
+            <div className="mb-0 md:mb-[2em] text-[40px]">
               Emmanuel Kwesi Hervie
             </div>
             <div className="my-4 text-[18px]">
@@ -50,7 +50,7 @@ const Page = () => {
               <span className="text-[24px]">Frontend Development roles.</span>
             </div>
           </div>
-          <div className="md:basis-1/2 w-full h-[50vh] md:h-[80vh] relative mb-5">
+          <div className="md:basis-1/2 w-full h-[50vh] md:h-[80vh] relative mb-5 px-4">
             <Image src={Khervie00} fill alt="Khervie00" objectFit="cover" />
           </div>
         </div>
