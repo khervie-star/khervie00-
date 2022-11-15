@@ -4,7 +4,7 @@ import Khervie00 from "../../public/assets/khervie00.jpg";
 
 const Page = () => {
   return (
-    <div data-scroll-section>
+    <div data-scroll-section className="box-border">
       <div className="h-[90vh] md:h-screen lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative">
         <div className=" flex md:items-start md:h-full">
           <h1 className="text-[100px] md:text-[120px] text-left md:text-center mt-20 my-8 md:my-20 leading-[80px] md:leading-normal">
