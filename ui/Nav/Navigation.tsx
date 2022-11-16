@@ -35,8 +35,6 @@ const actionVariants = {
 };
 
 export const Navigation = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
-
   return (
     <>
       <motion.ul

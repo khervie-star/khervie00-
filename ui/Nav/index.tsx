@@ -8,7 +8,7 @@ import { Navigation } from "./Navigation";
 import Link from "next/link";
 import ThemeToggleButton from "../Buttons/ThemeToggleButton";
 import DarkModeSwitch from "../Buttons/ThemeButton";
-import { GiDivergence } from "react-icons/gi";
+import { useCycleContext } from "../../providers/UseCycleContext";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -30,8 +30,8 @@ const sidebar = {
   },
 };
 
-const Nav = ({ isOpen }: any) => {
-  // const [isOpen, toggleOpen] = useCycle(false, true);
+const Nav = () => {
+  const [isOpen, toggleOpen] = useCycleContext();
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(1000);
@@ -59,7 +59,7 @@ const Nav = ({ isOpen }: any) => {
           <div className=" ">
             <div
               className="hover-underline-animation flip-animate cursor-pointer text-[20px] md:text-[32px] child-span-before:block text-[#171717] dark:text-[#fafafa] "
-              onClick={() => setOpen(false)}
+              onClick={() => toggleOpen()}
               data-hover="MENU"
             >
               <span data-hover="← Go back">Close Menu</span>

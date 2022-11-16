@@ -7,11 +7,10 @@ import ThemeToggleButton from "../Buttons/ThemeToggleButton";
 import ThemeToggleSwitch from "../Buttons/ThemeToggleSwitch";
 import { MenuToggle } from "./MenuToggle";
 import DarkModeSwitch from "../Buttons/ThemeButton";
+import { useCycleContext } from "../../providers/UseCycleContext";
 
 const NavigationBar = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
-  const [open, setOpen] = useState(false);
-  console.log(isOpen);
+  const [isOpen, toggleOpen] = useCycleContext();
 
   const handleMenu = () => {
     toggleOpen();
@@ -40,7 +39,7 @@ const NavigationBar = () => {
         >
           <span data-hover="MENU">MENU</span>
         </div>
-        <Nav isOpen={isOpen} />
+        <Nav />
         {/* <ThemeToggleSwitch /> */}
         <DarkModeSwitch />
       </div>
