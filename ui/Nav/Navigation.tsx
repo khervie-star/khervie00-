@@ -1,10 +1,12 @@
 "use client";
 
 import * as React from "react";
-import { motion, motionValue } from "framer-motion";
+import { motion, motionValue, useCycle } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import { FaGithub, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
+import Nav from ".";
+import DarkModeSwitch from "../Buttons/ThemeButton";
 
 const variants = {
   open: {
@@ -32,50 +34,54 @@ const actionVariants = {
   },
 };
 
-export const Navigation = () => (
-  <>
-    <motion.ul
-      variants={variants}
-      className="p-[25px] absolute top-[90px] left-0 w-screen"
-    >
-      {links.map((value, i) => (
-        <MenuItem i={i} key={i} link={value.link} name={value.name} />
-      ))}
-    </motion.ul>
-    <motion.div
-      variants={actionVariants}
-      className="p-[25px] absolute bottom-[90px] right-[90px] w-[230px] h-[200px]"
-    >
-      <p className="text-4xl font-bold text-[#171717] dark:text-[#fafafa] mb-2">
-        Reach out
-      </p>
-      <a
-        className="link link-underline link-underline-black text-lg font-light text-[#171717] dark:text-[#fafafa] my-2 mb-4"
-        href="mailto:herviek2001@gmail.com"
+export const Navigation = () => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+
+  return (
+    <>
+      <motion.ul
+        variants={variants}
+        className="p-[25px] absolute top-[90px] left-0 w-screen md:w-[300px]"
       >
-        herviek2001@gmail.com
-      </a>
-      <div className="flex gap-6 text-[20px] mt-8">
-        <Link href="#">
-          <FaTwitter />
-        </Link>
-        <Link href="#">
-          <FaLinkedin />
-        </Link>
-        <Link href="#">
-          <FaGithub />
-        </Link>
-        <Link href="#">
-          <FaWhatsapp />
-        </Link>
-      </div>
-    </motion.div>
-  </>
-);
+        {links.map((value, i) => (
+          <MenuItem i={i} key={i} link={value.link} name={value.name} />
+        ))}
+      </motion.ul>
+      <motion.div
+        variants={actionVariants}
+        className="p-[25px] absolute bottom-[90px] right-[90px] w-[230px] h-[200px]"
+      >
+        <p className="text-4xl font-bold text-[#171717] dark:text-[#fafafa] mb-2">
+          Reach out
+        </p>
+        <a
+          className=" text-lg font-light text-[#171717] dark:text-[#fafafa]  my-2 mb-4 hover-underline-animation after:bg-[#171717] dark:after:bg-[#fafafa] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left"
+          href="mailto:herviek2001@gmail.com"
+        >
+          <span>herviek2001@gmail.com</span>
+        </a>
+        <div className="flex gap-6 text-[20px] mt-8 text-[#171717] dark:text-[#fafafa] ">
+          <Link href="https://twitter.com/kwesi_Hervie/">
+            <FaTwitter />
+          </Link>
+          <Link href="https://www.linkedin.com/in/kwesi-hervie-10622715b/">
+            <FaLinkedin />
+          </Link>
+          <Link href="https://github.com/khervie-star">
+            <FaGithub />
+          </Link>
+          <Link href="https://wa.me/2348180746707?text=Hi%20Khervie00">
+            <FaWhatsapp />
+          </Link>
+        </div>
+      </motion.div>
+    </>
+  );
+};
 
 const links = [
   { name: "Home", link: "/" },
-  { name: "About", link: "about-me" },
+  { name: "About", link: "/about" },
   { name: "Projects", link: "projects" },
   { name: "Stack", link: "stack" },
   { name: "Contact", link: "contact" },

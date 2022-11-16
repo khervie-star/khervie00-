@@ -12,7 +12,7 @@ const NavigationBar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
-    <div className="w-full h-[70px] box-border fixed left-0 right-0 px-[1em] md:px-[3em] py-[1em] flex items-center justify-between z-[9999] mix-blend-difference text-[#fafafa] ">
+    <div className="w-full h-[70px] box-border fixed left-0 right-0 px-[1em] md:px-[3em] py-[1em] flex items-center justify-between z-[9999]  text-[#fafafa] ">
       <div className="">
         <Link
           href="/"
@@ -24,13 +24,13 @@ const NavigationBar = () => {
       <div className="flex items-center gap-3 md:gap-8">
         {/* <MenuToggle toggle={() => toggleOpen()} /> */}
         <div
-          className="hover-underline-animation flip-animate cursor-pointer text-[20px] md:text-[32px] child-span-before:block"
+          className=" flip-animate cursor-pointer text-[20px] md:text-[32px] child-span-before:block  hover-underline-animation after:bg-[#171717] dark:after:bg-[#fafafa] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left"
           onClick={() => toggleOpen()}
           data-hover="MENU"
         >
           <span data-hover="MENU">MENU</span>
         </div>
-        {/* <Nav isOpen={isOpen} /> */}
+        <Nav isOpen={isOpen} />
         {/* <ThemeToggleSwitch /> */}
         <DarkModeSwitch />
       </div>

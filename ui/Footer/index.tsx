@@ -105,9 +105,7 @@ export function Footer() {
               >
                 Projects
               </Link>
-              <Link href="" className="dark:text-[#fafafa] text-[#171717]">
-                Skills
-              </Link>
+
               <Link
                 href="/contact"
                 className="dark:text-[#fafafa] text-[#171717]"

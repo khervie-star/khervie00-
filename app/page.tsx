@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <div
-        className="w-screen py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center relative  dark:bg-[#171717] bg-[#fafafa] scroll-smooth"
+        className="w-screen py-[4rem] pb-0  min-h-screen flex-1 flex flex-col justify-center items-center relative  dark:bg-[#171717] bg-[#fafafa] scroll-smooth z-20"
         data-scroll-section
         id="header"
       >

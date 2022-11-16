@@ -8,7 +8,7 @@ import Link from "next/link";
 import Nav from "../ui/Nav";
 import NavigationBar from "../ui/Nav/NavigationBar";
 
-const myFont = localFont({ src: "../lib/font/ProximaSoft-Bold.woff2" });
+const myFont = localFont({ src: "../lib/font/ProximaSoft-Thin.woff2" });
 
 export default function RootLayout({
   children,
