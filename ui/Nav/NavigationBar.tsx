@@ -11,9 +11,17 @@ import DarkModeSwitch from "../Buttons/ThemeButton";
 const NavigationBar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
+  const handleMenu = () => {
+    toggleOpen();
+  };
+
   return (
-    <div className="w-full h-[70px] box-border fixed left-0 right-0 px-[1em] md:px-[3em] py-[1em] flex items-center justify-between z-[9999]  text-[#fafafa] ">
-      <div className="">
+    <div
+      className={`w-full h-[70px] box-border fixed left-0 right-0 px-[1em] md:px-[3em] py-[1em] flex items-center justify-between z-[9999]  text-[#fafafa] ${
+        isOpen ? "" : "mix-blend-difference"
+      }`}
+    >
+      <div className=" ">
         <Link
           href="/"
           className="font-medium text-[20px] md:text-[32px] mx-4 my-12 px-2 py-12 cursor-pointer text-[#fafafa] "

@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <div className=" w-full relative" id="about-me">
           <div
-            className="absolute bottom-50 left-60  text-[80px] md:text-[200px]  text-gray-200 dark:text-gray-700 -z-10"
+            className="absolute bottom-50 left-60  text-[80px] md:text-[200px]  text-gray-200 dark:text-gray-700 -z-10 hidden md:block"
             data-scroll
             data-scroll-speed="5"
             data-scroll-direction="horizontal"

@@ -29,7 +29,7 @@ const Page = () => {
               <div className="float-left md:float-right mt-2"> - Rick</div>
             </div>
           </div>
-          <div className="absolute bottom-[2vh] md:bottom-[10vh] right-0 w-[90vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] leading-tight" />
+          {/* <div className="absolute bottom-[2vh] md:bottom-[10vh] right-0 w-[90vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] leading-tight" /> */}
         </div>
 
         <div className="mb-10 md:mb-20">
@@ -171,8 +171,8 @@ const Page = () => {
           </h1>
         </div>
 
-        <div className="mt-4 md:mt-8  ">
-          <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
+        <div className="mt-4 md:mt-8 box-border">
+          <h1 className="text-[60px] md:text-[84px] text-center w-full my-4 mt-8 md:mt-2">
             Work Experience
           </h1>
         </div>
