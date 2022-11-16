@@ -86,7 +86,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="basis-1/2"
+              className="basis-1/2 flex flex-col gap-8"
               data-scroll
               data-scroll-speed="1"
               data-scroll-position="center"
@@ -100,8 +100,8 @@ export default function Home() {
               technologies and other scripting languages. I code for fun and
               stuff
               <button
-                className="hover-underline-animation flip-animate dark:text-[#fafafa] text-[#171717]"
-                data-hover="About Me"
+                className="hover-underline-animation flip-animate dark:text-[#fafafa] text-[#171717]  dark:child-span-before:text-[#fafafa] child-span-before:text-[#171717] child-span-before:block  after:bg-[#171717] dark:after:bg-[#fafafa] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left float-left"
+                data-hover="About Me ⬤"
               >
                 <span data-hover="About Me">Learn more</span>
               </button>

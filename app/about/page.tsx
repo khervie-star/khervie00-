@@ -128,7 +128,7 @@ const Page = () => {
               </p>
             </div>
             <div
-              className="md:basis-2/3 w-full text-[24px] "
+              className="md:basis-2/3 w-full  mt-4 md:mt-0 text-base md:text-[24px] "
               // data-scroll
               // data-scroll-speed="1"
             >
@@ -185,7 +185,7 @@ const Page = () => {
           </div>
         </Link>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
