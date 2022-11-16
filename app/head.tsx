@@ -24,6 +24,20 @@ export default function Head() {
         href="/favicon/favicon-16x16.png"
       />
       <link rel="manifest" href="/static/favicon/site.webmanifest" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://khervie00.vercel.app" />
+      <meta
+        property="og:title"
+        content="Kwesi Hervie -  Softtware developer."
+      />
+      <meta
+        property="og:description"
+        content="Kwesi Hervie -  Softtware developer."
+      />
+      <meta
+        property="og:image"
+        content="https://res.cloudinary.com/nfttest/image/upload/v1668599990/Stuff/1_rqm5d9.png"
+      />
       {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
