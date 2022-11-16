@@ -31,7 +31,7 @@ const Page = () => {
           </div>
           <div className="absolute bottom-[2vh] md:bottom-[10vh] right-0 w-[90vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] leading-tight" />
         </div>
-        <div className="mb-8">
+        <div className="mb-10 md:mb-20">
           <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
             Profile
           </h1>
@@ -99,37 +99,38 @@ const Page = () => {
               {/* <div className={`h-full w-full bg-fixed bg-khervie`} /> */}
             </div>
           </div>
-          <div className="w-full h-[50vh] flex px-[3em]">
-            <div
-              style={{
-                width: "100%",
-                height: "100%",
-                paddingBottom: "129%",
-                position: "relative",
-              }}
-              className="basis-1/3 h-[40vh]"
-            >
-              <iframe
-                src="https://giphy.com/embed/SvGFA2WF9IP0WjmzvE"
-                width="100%"
-                height="100%"
-                style={{ position: "absolute" }}
-                frameBorder="0"
-                className="giphy-embed"
-                allowFullScreen
-              ></iframe>
+          <div className="w-full h-full mb-6 flex gap-16 px-[3em]">
+            <div className="basis-1/3">
+              <div
+                style={{
+                  width: "100%",
+                  height: "0",
+                  paddingBottom: "110%",
+                  position: "relative",
+                }}
+              >
+                <iframe
+                  src="https://giphy.com/embed/kyKuZzsa6bShl3SaHe"
+                  width="100%"
+                  height="100%"
+                  style={{ position: "absolute" }}
+                  frameBorder="0"
+                  className="giphy-embed"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p>
+                <a href="https://giphy.com/stickers/rickandmorty-season-4-episode-8-rick-and-morty-kyKuZzsa6bShl3SaHe">
+                  via GIPHY
+                </a>
+              </p>
             </div>
-            <p>
-              <a href="https://giphy.com/gifs/rickandmorty-season-4-episode-3-rick-and-morty-SvGFA2WF9IP0WjmzvE">
-                via GIPHY
-              </a>
-            </p>
             <div
-              className="md:basis-2/3 w-full text-[px] "
-              data-scroll
-              data-scroll-speed="1"
+              className="md:basis-2/3 w-full text-[24px] "
+              // data-scroll
+              // data-scroll-speed="1"
             >
-              <p className="my-4">
+              <p className="mb-4">
                 I&apos;m a software developer currently working in Ibadan
                 Nigeria and I&apos;m always looking for innovative solutions to
                 problems that arise in my daily life. In my job, I spend most of
@@ -164,6 +165,12 @@ const Page = () => {
 
         <div className="mt-4 md:mt-8  ">
           <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
+            Skillset
+          </h1>
+        </div>
+
+        <div className="mt-4 md:mt-8  ">
+          <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
             Work Experience
           </h1>
         </div>
@@ -176,7 +183,7 @@ const Page = () => {
           </div>
         </Link>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
