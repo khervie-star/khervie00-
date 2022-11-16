@@ -31,6 +31,7 @@ const Page = () => {
           </div>
           <div className="absolute bottom-[2vh] md:bottom-[10vh] right-0 w-[90vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] leading-tight" />
         </div>
+
         <div className="mb-10 md:mb-20">
           <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
             Profile
@@ -39,19 +40,19 @@ const Page = () => {
             className="p-10 md:p-20 flex flex-col-reverse md:flex-row gap-4 "
             id="profile"
           >
-            <div className="basis-1/2 p-14 pt-0">
+            <div className="basis-1/2 p-0 md:p-14 md:pt-0">
               <div className="text-[40px]">Emmanuel Kwesi Hervie</div>
               <div className="my-1 text-[18px] mb-0 md:mb-[2em] ">
                 <span className="text-[20px] dark:text-gray-500 text-gray-700">
                   Ibadan, Nigeria
                 </span>
               </div>
-              <div className="my-6 text-[18px]">
+              <div className="my-6 text-[18px] flex flex-col">
                 Birthdate:
                 <span className="text-[24px]"> 21st January, 2001</span>
               </div>
 
-              <div className="my-6 text-[18px]">
+              <div className="my-6 text-[18px] flex flex-col">
                 Role: <span className="text-[24px]">Frontend Developer</span>
               </div>
 
@@ -60,7 +61,7 @@ const Page = () => {
                 <span className="text-[24px]">Frontend Developer</span>
               </div> */}
 
-              <div className="my-6 text-[18px]">
+              <div className="my-6 text-[18px] flex flex-col">
                 Hobbies:{" "}
                 <span className="text-[24px]">
                   Football, Music, Watching Cartoons, Reading, Talking to my
@@ -68,7 +69,7 @@ const Page = () => {
                 </span>
               </div>
 
-              <div className="my-6 text-[18px]">
+              <div className="my-6 text-[18px] flex flex-col">
                 Areas of Interest:{" "}
                 <span className="text-[24px]">CySec, IOT, Web3</span>
               </div>
@@ -99,8 +100,9 @@ const Page = () => {
               {/* <div className={`h-full w-full bg-fixed bg-khervie`} /> */}
             </div>
           </div>
-          <div className="w-full h-full mb-6 flex gap-16 px-[3em]">
-            <div className="basis-1/3">
+
+          <div className="w-full h-full mb-6 md:flex md:gap-16 px-[3em]">
+            <div className="w-full md:basis-1/3">
               <div
                 style={{
                   width: "100%",
