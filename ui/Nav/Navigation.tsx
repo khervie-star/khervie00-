@@ -41,7 +41,7 @@ export const Navigation = () => {
     <>
       <motion.ul
         variants={variants}
-        className="p-[25px] absolute top-[90px] left-0 w-screen md:w-[300px]"
+        className="p-[25px] absolute top-[40px] md:top-[90px] left-0 w-screen md:w-[300px]"
       >
         {links.map((value, i) => (
           <MenuItem i={i} key={i} link={value.link} name={value.name} />
@@ -49,7 +49,7 @@ export const Navigation = () => {
       </motion.ul>
       <motion.div
         variants={actionVariants}
-        className="p-[25px] absolute bottom-[90px] right-[90px] w-[230px] h-[200px]"
+        className="p-[25px] absolute bottom-0 right-[40px] md:right-[90px] w-[230px] h-[200px]"
       >
         <p className="text-4xl font-bold text-[#171717] dark:text-[#fafafa] mb-2">
           Reach out
@@ -60,7 +60,7 @@ export const Navigation = () => {
         >
           <span>herviek2001@gmail.com</span>
         </a>
-        <div className="flex gap-6 text-[20px] mt-8 text-[#171717] dark:text-[#fafafa] ">
+        <div className="flex gap-6 text-[20px] mt-4 md:mt-8 text-[#171717] dark:text-[#fafafa] ">
           <Link href="https://twitter.com/kwesi_Hervie/">
             <FaTwitter />
           </Link>

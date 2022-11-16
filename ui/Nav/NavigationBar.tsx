@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Nav from ".";
 import { motion, useCycle } from "framer-motion";
 import ThemeToggleButton from "../Buttons/ThemeToggleButton";
@@ -10,6 +10,8 @@ import DarkModeSwitch from "../Buttons/ThemeButton";
 
 const NavigationBar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
+  const [open, setOpen] = useState(false);
+  console.log(isOpen);
 
   const handleMenu = () => {
     toggleOpen();
