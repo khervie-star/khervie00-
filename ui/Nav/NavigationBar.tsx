@@ -33,7 +33,7 @@ const NavigationBar = () => {
       <div className="flex items-center gap-3 md:gap-8">
         {/* <MenuToggle toggle={() => toggleOpen()} /> */}
         <div
-          className=" flip-animate cursor-pointer text-[20px] md:text-[32px] child-span-before:block  hover-underline-animation after:bg-[#171717] dark:after:bg-[#fafafa] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left"
+          className=" clickable flip-animate cursor-pointer text-[20px] md:text-[32px] child-span-before:block  hover-underline-animation after:bg-[#171717] dark:after:bg-[#fafafa] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left"
           onClick={() => toggleOpen()}
           data-hover="MENU"
         >

@@ -27,7 +27,7 @@ export default function RootLayout({
         <ThemeContextProvider>
           <LocomotiveScroll>
             <CycleContext>
-              {/* <AnimatedCursor /> */}
+              <AnimatedCursor />
               <NavigationBar />
               {children}
               {/* <Footer /> */}
