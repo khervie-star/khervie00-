@@ -1,9 +1,49 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaTwitter, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 import Khervie00 from "../../public/assets/khervie00.jpg";
 import { Footer } from "../../ui/Footer";
+import { Tabs, ConfigProvider } from "antd";
+import { Tab } from "@headlessui/react";
+
+const projectTabs = [
+  {
+    label: "Web",
+    children: null,
+  },
+  {
+    label: "Mobile",
+    children: null,
+  },
+  {
+    label: "Others",
+    children: null,
+  },
+];
+
+const programmes = [
+  {
+    title: "Agriculture and Livelihoods Zero Hunger Project ",
+    time: "Every first sunday of the month",
+    img: "",
+  },
+  {
+    title: "Education and Employability",
+    time: "Sunday, 9am - 11:30am",
+    img: "",
+  },
+  {
+    title: "Care and support for the Vulnerable",
+    time: "Sunday, 8am - 9am",
+    img: "",
+  },
+];
+
+const tab_styles =
+  "ui-selected:border-b-2 ui-selected:border-solid ui-selected:border-green-600  ui-selected:text-green-600 text-white/80 transition-all duration-[150ms]";
 
 const Page = () => {
   return (
@@ -11,12 +51,14 @@ const Page = () => {
       <div data-scroll-section className="box-border">
         <div className="h-[90vh] md:h-screen lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative">
           <div className=" flex md:items-start md:h-full">
-            <h1 className="text-[100px] md:text-[120px] text-left md:text-center mt-20 my-8 md:my-20 leading-[80px] md:leading-normal">
-              About Me
-              <button className="text-red-500 text-[16px]">
-                Download Resume
-              </button>
-            </h1>
+            <div className="flex flex-col gap-2">
+              <h1 className="text-[100px] md:text-[120px] text-left md:text-center mt-20 my-8 md:my-20 leading-[80px] md:leading-normal flex flex-col gap-2 items-start">
+                <span>About Me</span>
+                <button className="text-red-500 text-[16px]">
+                  Download Resume
+                </button>
+              </h1>
+            </div>
           </div>
           <div className="flex flex-col justify-center items-center mt-8 md:mt-0 md:h-full w-full ">
             <div className="text-[26px]">
@@ -38,8 +80,7 @@ const Page = () => {
           </h1>
           <div
             className="p-10 md:p-20 flex flex-col-reverse md:flex-row gap-4 "
-            id="profile"
-          >
+            id="profile">
             <div className="basis-1/2 p-0 md:p-14 md:pt-0">
               <div className="text-[40px]">Emmanuel Kwesi Hervie</div>
               <div className="my-1 text-[18px] mb-0 md:mb-[2em] ">
@@ -109,8 +150,7 @@ const Page = () => {
                   height: "0",
                   paddingBottom: "110%",
                   position: "relative",
-                }}
-              >
+                }}>
                 <iframe
                   src="https://giphy.com/embed/kyKuZzsa6bShl3SaHe"
                   width="100%"
@@ -118,8 +158,7 @@ const Page = () => {
                   style={{ position: "absolute" }}
                   frameBorder="0"
                   className="giphy-embed"
-                  allowFullScreen
-                ></iframe>
+                  allowFullScreen></iframe>
               </div>
               <p>
                 <a href="https://giphy.com/stickers/rickandmorty-season-4-episode-8-rick-and-morty-kyKuZzsa6bShl3SaHe">
@@ -128,7 +167,7 @@ const Page = () => {
               </p>
             </div>
             <div
-              className="md:basis-2/3 w-full  mt-4 md:mt-0 text-base md:text-[24px] "
+              className="md:basis-2/3 w-full  mt-4 md:mt-0 text-base md:text-[24px] leading-[170%]"
               // data-scroll
               // data-scroll-speed="1"
             >
@@ -165,10 +204,77 @@ const Page = () => {
 
         <div className="relative w-[80vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] text-center" />
 
-        <div className="mt-4 md:mt-8  ">
+        <div className="mt-4 md:mt-8">
           <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
-            Skillset
+            Projects
           </h1>
+          <Tab.Group>
+            <Tab.List
+              className={
+                "w-full flex justify-center gap-4 lg:gap-8 text-[21px]"
+              }>
+              {projectTabs.map((tabItem, i) => (
+                <Tab key={i} className={tab_styles}>
+                  {tabItem.label}
+                </Tab>
+              ))}
+            </Tab.List>
+            <Tab.Panels>
+              <Tab.Panel
+                className={"w-full px-5 py-8 lg:px-[100px] lg:py-[70px]"}>
+                <div className="container mx-auto">
+                  <div className="grid lg:grid-cols-3 gap-6 md:gap-12">
+                    {programmes.map((programme, i) => (
+                      <a
+                        key={i}
+                        className="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                        href="#"
+                        data-aos="zoom-in-up">
+                        <div className="flex-shrink-0 relative w-full rounded-xl overflow-hidden h-[350px] before:absolute before:inset-x-0 before:w-full before:h-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+                          <Image
+                            className="w-full h-full absolute top-0 start-0 object-cover"
+                            src={programme.img}
+                            alt="Image Description"
+                          />
+                        </div>
+
+                        <div className="absolute top-0 inset-x-0 z-10">
+                          <div className="p-4 flex flex-col h-full sm:p-6">
+                            <div className="flex items-center">
+                              <div className="flex-shrink-0">
+                                {/* <Image
+                      className="h-[2.875rem] w-[2.875rem] border-2 border-white rounded-full"
+                      src={logo}
+                      alt="Image Description"
+                    /> */}
+                              </div>
+                              {/* <div className="ms-2.5 sm:ms-4">
+                        <h4 className="font-semibold text-white">Gloria</h4>
+                        <p className="text-xs text-white/[.8]">Jan 09, 2021</p>
+                      </div> */}
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="absolute bottom-0 inset-x-0 z-10">
+                          <div className="flex flex-col h-full p-4 sm:p-6">
+                            <h3 className="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8] font-outfit">
+                              {programme.title}
+                            </h3>
+                            <p className="mt-2 text-white/[.8] font-nunito_sans">
+                              {programme.time}
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </Tab.Panel>
+              <Tab.Panel>Content 2</Tab.Panel>
+              <Tab.Panel>Content 3</Tab.Panel>
+            </Tab.Panels>
+          </Tab.Group>
         </div>
 
         <div className="mt-4 md:mt-8 box-border">
@@ -178,8 +284,7 @@ const Page = () => {
         </div>
         <Link
           className="group flip-animate about-link  text-[#fafafa] dark:text-[#171717] dark:bg-white bg-[#171717] text-[64px] h-[50vh] md:h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  dark:child-span-before:text-[#171717] child-span-before:text-[#fafafa] child-span-before:block"
-          href="/contact"
-        >
+          href="/contact">
           <div className=" hover-underline-animation after:bg-[#fafafa] dark:after:bg-[#171717] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left">
             <span data-hover="Contact">Contact</span>
           </div>
