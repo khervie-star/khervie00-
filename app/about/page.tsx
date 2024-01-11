@@ -68,7 +68,10 @@ const Page = () => {
                 blows you.”
               </div>
 
-              <div className="float-left md:float-right mt-2"> - Rick</div>
+              <div className="float-left md:float-right mt-2">
+                {" "}
+                - Rick Sanchez
+              </div>
             </div>
           </div>
           {/* <div className="absolute bottom-[2vh] md:bottom-[10vh] right-0 w-[90vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] leading-tight" /> */}
@@ -167,7 +170,7 @@ const Page = () => {
               </p>
             </div>
             <div
-              className="md:basis-2/3 w-full  mt-4 md:mt-0 text-base md:text-[24px] leading-[170%]"
+              className="md:basis-2/3 w-full  mt-4 md:mt-0 text-base md:text-[24px] leading-[170%] opacity-80"
               // data-scroll
               // data-scroll-speed="1"
             >
