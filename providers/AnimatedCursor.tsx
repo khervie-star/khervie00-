@@ -11,6 +11,7 @@ const AnimatedCursorWrapper = () => {
   return (
     <>
       <AnimatedCursor
+        className="z-[9999]"
         innerSize={12}
         outerSize={30}
         color="250, 250, 250"

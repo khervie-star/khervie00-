@@ -1,3 +1,5 @@
+"use client";
+
 import AnimatedCursor from "../providers/AnimatedCursor";
 import ThemeContextProvider from "../providers/ThemeContext";
 import { Footer } from "../ui/Footer";
@@ -9,6 +11,7 @@ import Link from "next/link";
 import Nav from "../ui/Nav";
 import NavigationBar from "../ui/Nav/NavigationBar";
 import { CycleContext } from "../providers/UseCycleContext";
+import Misc from "../providers/Misc";
 
 const myFont = localFont({ src: "../lib/font/ProximaSoft-Thin.woff2" });
 
@@ -35,7 +38,7 @@ export default function RootLayout({
             <CycleContext>
               <AnimatedCursor />
               <NavigationBar />
-              {children}
+              <Misc>{children}</Misc>
               {/* <Footer /> */}
             </CycleContext>
           </LocomotiveScroll>
