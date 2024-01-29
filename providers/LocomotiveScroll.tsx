@@ -10,12 +10,12 @@ const LocomotiveScroll = ({ children }: { children: React.ReactNode }) => {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
-        // mobile: {
-        //   smooth: true,
-        //   inertia: 0.8,
-        //   getDirection: true,
-        //   breakpoint: 0,
-        // },
+        mobile: {
+          smooth: true,
+          inertia: 0.8,
+          getDirection: true,
+          breakpoint: 0,
+        },
         // tablet: {
         //   smooth: true,
         //   inertia: 0.8,
@@ -31,8 +31,7 @@ const LocomotiveScroll = ({ children }: { children: React.ReactNode }) => {
           //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
         ]
       }
-      containerRef={containerRef}
-    >
+      containerRef={containerRef}>
       <main data-scroll-container ref={containerRef}>
         {children}
       </main>
