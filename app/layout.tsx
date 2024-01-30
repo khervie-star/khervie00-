@@ -1,18 +1,10 @@
-"use client";
+import type { Metadata } from "next";
 
-import AnimatedCursor from "../providers/AnimatedCursor";
-import ThemeContextProvider from "../providers/ThemeContext";
-import { Footer } from "../ui/Footer";
 import "./globals.css";
+import "animate.css";
 import localFont from "@next/font/local";
 import { Outfit } from "next/font/google";
-import LocomotiveScroll from "../providers/LocomotiveScroll";
-import Link from "next/link";
-import Nav from "../ui/Nav";
-import NavigationBar from "../ui/Nav/NavigationBar";
-import { CycleContext } from "../providers/UseCycleContext";
-import Misc from "../providers/Misc";
-import { NextUIProvider } from "@nextui-org/react";
+import { ProviderTree } from "../context";
 
 const myFont = localFont({ src: "../lib/font/ProximaSoft-Thin.woff2" });
 
@@ -21,6 +13,43 @@ const outfit = Outfit({
   display: "swap",
   variable: "--font-outfit",
 });
+
+const URL_BASE = "https://khervie00.vercel.app/";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(URL_BASE),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+    },
+  },
+  openGraph: {
+    title: "Kwesi Hervie | UI Developer",
+    description:
+      "Kwesi Hervie | UI Developer | Tech. Nerd |  Cybersecurity Enthusiast",
+    url: URL_BASE,
+    siteName: "Kwesi Hervie | Portfolio",
+    images: [
+      {
+        url: `${URL_BASE}/og.jpeg`,
+        width: 800,
+        height: 600,
+      },
+      {
+        url: `${URL_BASE}/og.jpeg`,
+        width: 1800,
+        height: 1600,
+        alt: "Kwesi Hervie",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  title: "Kwesi Hervie | UI Developer",
+  description: "Software Development | Networking | IT Solutions",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -28,24 +57,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={outfit.className + ` scroll-smooth`}>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+      <head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body className="bg-[#fafafa] dark:bg-[#171717] transition-all duration-500 text-[#171717] dark:text-white overflow-x-hidden relative scroll-smooth">
-        <ThemeContextProvider>
-          <NextUIProvider>
-            <LocomotiveScroll>
-              <CycleContext>
-                <AnimatedCursor />
-                <NavigationBar />
-                <Misc>{children}</Misc>
-                {/* <Footer /> */}
-              </CycleContext>
-            </LocomotiveScroll>
-          </NextUIProvider>
-        </ThemeContextProvider>
+        <ProviderTree>{children}</ProviderTree>
       </body>
     </html>
   );
