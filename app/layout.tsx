@@ -25,11 +25,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Kwesi Hervie | UI Developer",
-    description:
-      "Kwesi Hervie | UI Developer | Tech. Nerd |  Cybersecurity Enthusiast",
+    title: "Kwesi Hervie",
+    description: "UI Developer | Cybersecurity Enthusiast | Tech. Nerd ",
     url: URL_BASE,
-    siteName: "Kwesi Hervie | Portfolio",
+    siteName: "Kwesi Hervie",
     images: [
       {
         url: `${URL_BASE}/og.jpeg`,
@@ -46,8 +45,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  title: "Kwesi Hervie | UI Developer",
-  description: "Software Development | Networking | IT Solutions",
+  title: "Kwesi Hervie",
+  description: "UI Developer | Cybersecurity Enthusiast | Tech. Nerd ",
 };
 
 export default function RootLayout({
