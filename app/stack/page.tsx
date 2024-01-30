@@ -1,61 +1,110 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaTwitter, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
-import Khervie00 from "../../public/assets/khervie00.jpg";
 import { Footer } from "../../ui/Footer";
-import { Tabs, ConfigProvider } from "antd";
-import { Tab } from "@headlessui/react";
+import { Listbox, ListboxItem } from "@nextui-org/react";
+import react from "../../public/assets/skill_icons/react.png";
+import flutter from "../../public/assets/skill_icons/flutter.svg";
 
-const projectTabs = [
-  {
-    label: "Web",
-    children: null,
-  },
-  {
-    label: "Mobile",
-    children: null,
-  },
-  {
-    label: "Others",
-    children: null,
-  },
-];
+import csharp from "../../public/assets/skill_icons/c-sharp.png";
+import cplusplus from "../../public/assets/skill_icons/c++.png";
 
-const programmes = [
-  {
-    title: "Agriculture and Livelihoods Zero Hunger Project ",
-    time: "Every first sunday of the month",
-    img: "",
-  },
-  {
-    title: "Education and Employability",
-    time: "Sunday, 9am - 11:30am",
-    img: "",
-  },
-  {
-    title: "Care and support for the Vulnerable",
-    time: "Sunday, 8am - 9am",
-    img: "",
-  },
-];
+import azure from "../../public/assets/skill_icons/azure.svg";
+import npm from "../../public/assets/skill_icons/npm.svg";
+
+import next from "../../public/assets/skill_icons/nextjs.svg";
+import tailwind from "../../public/assets/skill_icons/tailwind.svg";
+
+import js from "../../public/assets/skill_icons/js.png";
+import ts from "../../public/assets/skill_icons/ts.png";
+import html from "../../public/assets/skill_icons/html.png";
+import wordpress from "../../public/assets/skill_icons/wordpress.svg";
+import reactquery from "../../public/assets/skill_icons/reactquery.svg";
+
+import Image from "next/image";
+
+const stack = {
+  frontend: [
+    { title: "HTML/CSS", icon: html },
+    { title: "ReactJs", icon: react },
+    { title: "NextJs", icon: next },
+    { title: "JavaScript", icon: js },
+    { title: "ReactQuery", icon: reactquery },
+    { title: "Wordpress", icon: wordpress },
+  ],
+  mobile: [
+    { title: "Flutter", icon: flutter },
+    { title: "ReactNative", icon: react },
+  ],
+  styling: [
+    { title: "CSS", icon: null },
+    { title: "SCSS", icon: null },
+    { title: "TailwindCss", icon: tailwind },
+    { title: "Styled Components", icon: null },
+    { title: "Bootstrap", icon: null },
+    { title: "Animate.css", icon: null },
+    { title: "CSS", icon: null },
+  ],
+  ui_libraries: [
+    { title: "MUI", icon: null },
+    { title: "Antd", icon: null },
+    { title: "NextUI", icon: null },
+    { title: "Chakra UI", icon: null },
+  ],
+  tools: [
+    { title: "Git", icon: null },
+    { title: "Npm", icon: npm },
+    { title: "Vite", icon: null },
+  ],
+  languages: [
+    { title: "TypeScript", icon: null },
+    { title: "JavaScript", icon: null },
+    { title: "Php", icon: null },
+    { title: "Python", icon: null },
+    { title: "C++", icon: cplusplus },
+    { title: "C#", icon: csharp },
+  ],
+  database: [{ title: "MongoDb", icon: null }],
+  blockchain: [
+    { title: "Ethereum", icon: null },
+    { title: "Web3Js", icon: null },
+    { title: "Ether.js", icon: null },
+  ],
+  cloud: [
+    { title: "Vercel", icon: null },
+    { title: "Azure", icon: azure },
+  ],
+  others: [
+    { title: "Shell scripting (bash)", icon: null },
+    { title: "Nmap", icon: null },
+    { title: "JTR", icon: null },
+  ],
+};
 
 const tab_styles =
   "ui-selected:border-b-2 ui-selected:border-solid ui-selected:border-green-600  ui-selected:text-green-600 text-white/80 transition-all duration-[150ms]";
 
 const Page = () => {
+  const [selectedKeys, setSelectedKeys] = React.useState(new Set(["text"]));
+
+  const selectedValue = React.useMemo(
+    () => Array.from(selectedKeys).join(", "),
+    [selectedKeys]
+  );
+
+  console.log(selectedValue);
+
   return (
     <>
       <div data-scroll-section className="box-border">
         <div className="h-[90vh] md:h-screen lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative">
           <div className=" flex md:items-start md:h-full">
             <div className="flex flex-col gap-2">
-              <h1 className="text-[100px] md:text-[120px] text-left md:text-center mt-20 my-8 md:my-20 leading-[80px] md:leading-normal flex flex-col gap-2 items-start">
+              <h1 className="text-[100px] md:text-[120px] text-left md:text-center mt-20 my-8 leading-[80px] md:leading-normal flex flex-col gap-2 items-start">
                 <span>Stack</span>
               </h1>
-              <p>
+              <p className="text-base lg:text-[24px]">
                 Here are some of the tool and tech I&apos;ve worked with over
                 time:
               </p>
@@ -65,14 +114,59 @@ const Page = () => {
 
         <div className="relative w-[80vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] text-center" />
 
-        <div className="">
+        <div className="h-full bg-slate-100 p-5 lg:p-[100px]">
           <div className="flex justify-start gap-[40px]">
-            <div className="sidebar"></div>
+            <div className="w-[300px] border-none rounded-small border-default-200 dark:border-default-100">
+              <Listbox
+                aria-label="Skills Menu"
+                variant="flat"
+                disallowEmptySelection
+                selectionMode="single"
+                selectedKeys={selectedKeys}
+                onSelectionChange={setSelectedKeys}
+                className="p-0 gap-0 divide-y divide-default-300/50 dark:divide-default-100/80 bg-transparent max-w-[300px] overflow-visible shadow-none rounded-medium text-[#171717]"
+                itemClasses={{
+                  base: "px-3 rounded-md gap-3 h-12 data-[hover=true]:rounded-md data-[hover=true]:bg-default-100/10 justify-start",
+                  title: "text-[#171717] text-base font-medium !flex-none",
+                  selectedIcon: "text-[#171717]",
+                }}>
+                <ListboxItem key="frontend">Frontend.</ListboxItem>
+                <ListboxItem key="pull_requests">Styling.</ListboxItem>
+                <ListboxItem key="discussions">UI Libraries.</ListboxItem>
+                <ListboxItem key="actions">Mobile.</ListboxItem>
+                <ListboxItem key="projects">Languages.</ListboxItem>
+                <ListboxItem key="contributors">Blockchain.</ListboxItem>
+                <ListboxItem key="contributors">Cloud.</ListboxItem>
+                <ListboxItem key="contributors">Database.</ListboxItem>
+                <ListboxItem key="watchers">Tools.</ListboxItem>
+                <ListboxItem key="license">Others.</ListboxItem>
+              </Listbox>
+            </div>
+            <div className="w-full lg:w-[calc(100%-500px)] h-full">
+              <div className="flex justify-start flex-wrap items-center gap-6 px-[100px]">
+                {stack.frontend.map((skill, i) => (
+                  <div
+                    className="skill_card bg-white lg:w-[162px] lg:h-[135px] flex justify-center items-center text-center"
+                    key={i}>
+                    <div className="">
+                      <div className="w-[40px] h-[40px] relative mb-2 text-center mx-auto">
+                        <Image
+                          src={skill.icon}
+                          className="w-full h-full object-cover"
+                          alt=""
+                        />
+                      </div>
+                      <p className=" text-[#171717]">{skill.title}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
         <Link
-          className="group flip-animate about-link  text-[#fafafa] dark:text-[#171717] dark:bg-white bg-[#171717] text-[64px] h-[50vh] md:h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  dark:child-span-before:text-[#171717] child-span-before:text-[#fafafa] child-span-before:block"
+          className="group flip-animate about-link  dark:text-[#fafafa] text-[#171717] bg-white dark:bg-[#171717] text-[64px] h-[50vh] md:h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  child-span-before:text-[#171717] dark:child-span-before:text-[#fafafa] child-span-before:block"
           href="/about">
           <div className=" hover-underline-animation after:bg-[#fafafa] dark:after:bg-[#171717] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left">
             <span data-hover="Contact">About</span>

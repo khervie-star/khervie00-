@@ -12,6 +12,7 @@ import Nav from "../ui/Nav";
 import NavigationBar from "../ui/Nav/NavigationBar";
 import { CycleContext } from "../providers/UseCycleContext";
 import Misc from "../providers/Misc";
+import { NextUIProvider } from "@nextui-org/react";
 
 const myFont = localFont({ src: "../lib/font/ProximaSoft-Thin.woff2" });
 
@@ -34,14 +35,16 @@ export default function RootLayout({
       <head />
       <body className="bg-[#fafafa] dark:bg-[#171717] transition-all duration-500 text-[#171717] dark:text-white overflow-x-hidden relative scroll-smooth">
         <ThemeContextProvider>
-          <LocomotiveScroll>
-            <CycleContext>
-              <AnimatedCursor />
-              <NavigationBar />
-              <Misc>{children}</Misc>
-              {/* <Footer /> */}
-            </CycleContext>
-          </LocomotiveScroll>
+          <NextUIProvider>
+            <LocomotiveScroll>
+              <CycleContext>
+                <AnimatedCursor />
+                <NavigationBar />
+                <Misc>{children}</Misc>
+                {/* <Footer /> */}
+              </CycleContext>
+            </LocomotiveScroll>
+          </NextUIProvider>
         </ThemeContextProvider>
       </body>
     </html>
