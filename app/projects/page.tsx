@@ -12,7 +12,7 @@ import { SiJsonwebtokens } from "react-icons/si";
 import { Web } from "./_components";
 
 const Projects = () => {
-  const [selected, setSelected] = React.useState("web");
+  const [selected, setSelected] = React.useState<any>("web");
 
   return (
     <div>
