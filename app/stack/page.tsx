@@ -244,8 +244,8 @@ const Page = () => {
         <Link
           className="group flip-animate about-link  dark:text-[#fafafa] text-[#171717] bg-white dark:bg-[#171717] text-[64px] h-[50vh] md:h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  child-span-before:text-[#171717] dark:child-span-before:text-[#fafafa] child-span-before:block"
           href="/about">
-          <div className=" hover-underline-animation after:bg-[#fafafa] dark:after:bg-[#171717] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left">
-            <span data-hover="Contact">About</span>
+          <div className=" hover-underline-animation dark:after:bg-[#fafafa] after:bg-[#171717] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left">
+            <span data-hover="About">About</span>
           </div>
         </Link>
 

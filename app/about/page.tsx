@@ -207,84 +207,18 @@ const Page = () => {
 
         <div className="relative w-[80vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] text-center" />
 
-        <div className="mt-4 md:mt-8">
-          <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
-            Projects
-          </h1>
-          <Tab.Group>
-            <Tab.List
-              className={
-                "w-full flex justify-center gap-4 lg:gap-8 text-[21px]"
-              }>
-              {projectTabs.map((tabItem, i) => (
-                <Tab key={i} className={tab_styles}>
-                  {tabItem.label}
-                </Tab>
-              ))}
-            </Tab.List>
-            <Tab.Panels>
-              <Tab.Panel
-                className={"w-full px-5 py-8 lg:px-[100px] lg:py-[70px]"}>
-                <div className="container mx-auto">
-                  <div className="grid lg:grid-cols-3 gap-6 md:gap-12">
-                    {programmes.map((programme, i) => (
-                      <a
-                        key={i}
-                        className="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-                        href="#"
-                        data-aos="zoom-in-up">
-                        <div className="flex-shrink-0 relative w-full rounded-xl overflow-hidden h-[350px] before:absolute before:inset-x-0 before:w-full before:h-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
-                          <Image
-                            className="w-full h-full absolute top-0 start-0 object-cover"
-                            src={programme.img}
-                            alt="Image Description"
-                          />
-                        </div>
-
-                        <div className="absolute top-0 inset-x-0 z-10">
-                          <div className="p-4 flex flex-col h-full sm:p-6">
-                            <div className="flex items-center">
-                              <div className="flex-shrink-0">
-                                {/* <Image
-                      className="h-[2.875rem] w-[2.875rem] border-2 border-white rounded-full"
-                      src={logo}
-                      alt="Image Description"
-                    /> */}
-                              </div>
-                              {/* <div className="ms-2.5 sm:ms-4">
-                        <h4 className="font-semibold text-white">Gloria</h4>
-                        <p className="text-xs text-white/[.8]">Jan 09, 2021</p>
-                      </div> */}
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="absolute bottom-0 inset-x-0 z-10">
-                          <div className="flex flex-col h-full p-4 sm:p-6">
-                            <h3 className="text-lg sm:text-3xl font-semibold text-white group-hover:text-white/[.8] font-outfit">
-                              {programme.title}
-                            </h3>
-                            <p className="mt-2 text-white/[.8] font-nunito_sans">
-                              {programme.time}
-                            </p>
-                          </div>
-                        </div>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </Tab.Panel>
-              <Tab.Panel>Content 2</Tab.Panel>
-              <Tab.Panel>Content 3</Tab.Panel>
-            </Tab.Panels>
-          </Tab.Group>
-        </div>
-
         <div className="mt-4 md:mt-8 box-border">
           <h1 className="text-[60px] md:text-[84px] text-center w-full my-4 mt-8 md:mt-2">
             Work Experience
           </h1>
         </div>
+        <Link
+          className="group flip-animate about-link  dark:text-[#fafafa] text-[#171717] bg-white dark:bg-[#171717] text-[64px] h-[50vh] md:h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  child-span-before:text-[#171717] dark:child-span-before:text-[#fafafa] child-span-before:block"
+          href="/projects">
+          <div className=" hover-underline-animation dark:after:bg-[#fafafa] after:bg-[#171717] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left">
+            <span data-hover="Projects">Projects</span>
+          </div>
+        </Link>
         <Link
           className="group flip-animate about-link  text-[#fafafa] dark:text-[#171717] dark:bg-white bg-[#171717] text-[64px] h-[50vh] md:h-[70vh] w-full flex items-center justify-center font-medium cursor-pointer  dark:child-span-before:text-[#171717] child-span-before:text-[#fafafa] child-span-before:block"
           href="/contact">

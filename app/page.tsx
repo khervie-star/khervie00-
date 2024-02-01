@@ -9,6 +9,8 @@ import NavigationBar from "../ui/Nav/NavigationBar";
 import { Footer } from "../ui/Footer";
 
 import { stack } from "../lib/data";
+import { Button } from "@nextui-org/react";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -92,9 +94,10 @@ export default function Home() {
               technologies and other scripting languages. I code for fun and
               stuff
               <button
-                className="hover-underline-animation flip-animate dark:text-[#fafafa] text-[#171717]  dark:child-span-before:text-[#fafafa] child-span-before:text-[#171717] child-span-before:block  after:bg-[#171717] dark:after:bg-[#fafafa] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left float-left"
+                className="w-fit hover-underline-animation flip-animate dark:text-[#fafafa]/75 text-[#171717]/75  dark:child-span-before:text-[#fafafa]/75 child-span-before:text-[#171717]/75 child-span-before:block  after:bg-[#171717] dark:after:bg-[#fafafa] group-hover:after:scale-x-[1] group-hover:after:origin-bottom-left float-left flex items-center gap-3 text-[18px] lg:text-[21px]"
                 data-hover="About Me ⬤">
                 <span data-hover="About Me">Learn more</span>
+                <FaArrowRight />
               </button>
             </div>
           </div>
@@ -112,6 +115,15 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="w-full text-center mb-8">
+            <Button
+              href="/stack"
+              as={Link}
+              variant="flat"
+              startContent={<FaArrowRight />}>
+              See all
+            </Button>
           </div>
         </div>
 

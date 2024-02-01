@@ -10,12 +10,12 @@ const LocomotiveScroll = ({ children }: { children: React.ReactNode }) => {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
-        mobile: {
-          smooth: true,
-          inertia: 0.8,
-          getDirection: true,
-          breakpoint: 0,
-        },
+        // mobile: {
+        //   smooth: true,
+        //   inertia: 0.8,
+        //   getDirection: true,
+        //   breakpoint: 0,
+        // },
         // tablet: {
         //   smooth: true,
         //   inertia: 0.8,
