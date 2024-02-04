@@ -20,9 +20,9 @@ const Projects = () => {
         <div className="h-fit lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative">
           <div className=" flex md:items-start md:h-full">
             <div className="flex flex-col gap-2">
-              <h1 className="text-[100px] md:text-[120px] text-left md:text-center mt-20 my-8 leading-[80px] md:leading-normal flex flex-col gap-2 items-start">
+              <h1 className="text-[80px] md:text-[120px] text-left md:text-center mt-20 my-8 leading-[80px] md:leading-normal flex flex-col gap-2 items-start">
                 <span>
-                  Projects
+                  Experience
                   {/*  & <br /> Work Experience */}
                 </span>
               </h1>
