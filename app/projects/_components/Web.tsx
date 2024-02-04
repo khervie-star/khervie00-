@@ -106,16 +106,7 @@ const web_projects = [
     description: "",
     github: "https://github.com/khervie-star/github",
   },
-  {
-    title: "DevChamp",
-    image: "/assets/projects/devchamp.png",
-    url: "https://devchamp.vercel.app",
-    stack: ["ReactJs", "Javascript", "CSS", "TailwindCSS", "BlurHash"],
-    type: "Website",
-    niche: "Landing page, E-learning, Technology,",
-    description: "",
-    github: "https://github.com/khervie-star/devchamp",
-  },
+
   {
     title: "Devwork Solutions",
     image: "/assets/projects/devchamp.png",
@@ -155,7 +146,7 @@ export const Web = () => {
   const [current, setCurrent] = React.useState<currentType | null>(null);
 
   const handleOpen = (index: number) => {
-    setCurrent(web_projects[0]);
+    setCurrent(web_projects[index]);
     onOpen();
   };
   console.log(current);
