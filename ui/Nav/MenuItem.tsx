@@ -27,8 +27,7 @@ export const MenuItem = ({ i, link, name }: navTypes) => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="text-[#171717] dark:text-[#fafafa] text-6xl m-7 font-extralight"
-    >
+      className="text-[#171717] dark:text-[#fafafa] text-4xl lg:text-6xl m-7 font-extralight">
       <a href={link}>{name}</a>
     </motion.li>
   );
