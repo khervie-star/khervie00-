@@ -46,6 +46,25 @@ const web_projects = [
       "100pCotton is a new clothing brand that offers customers a unique and innovative shopping experience through NFTs. Our brand positioning is centered around utility, affordability, and community.",
   },
   {
+    title: "Leadlift",
+    image: "/assets/projects/leadlift.png",
+    url: "https://leadlift.io",
+    stack: [
+      "ReactJs",
+      "Typescript",
+      "ANTD",
+      "ReactQuery",
+      "Aos CSS",
+      "Animate.css",
+      "HeadlesUI",
+      "ButterCms",
+      "Calendly",
+    ],
+    type: "Website",
+    niche: "Landing page, Marketing, Social Media Management",
+    description: "",
+  },
+  {
     title: "Liquid Pay",
     image: "/assets/projects/liquidpay.png",
     url: "https://liquidpay-website.vercel.app",
@@ -81,8 +100,8 @@ const web_projects = [
   },
   {
     title: "Glory Tabernacle Ministry",
-    image: "/assets/projects/glorytaberacle.jpeg",
-    url: "https://bemybae.vercel.app",
+    image: "/assets/projects/glorytabernacle.jpeg",
+    url: "https://https://glorytabernacleibadan.org/",
     stack: [
       "NextJs",
       "Javascript",
@@ -109,7 +128,7 @@ const web_projects = [
 
   {
     title: "Devwork Solutions",
-    image: "/assets/projects/devchamp.png",
+    image: "/assets/projects/devwork.png",
     url: "https://devworks-solutions.vercel.app",
     stack: [
       "NextJs",
@@ -125,7 +144,7 @@ const web_projects = [
   },
   {
     title: "Frontida Zois Initiative",
-    image: "",
+    image: "/assets/projects/fzi.png",
     url: "https://fzi-v2.vercel.app",
     stack: [
       "NextJs",
@@ -138,6 +157,104 @@ const web_projects = [
     niche: "Landing page, Organization, NGO",
     description: "",
     github: "https://github.com/khervie-star/fzi-v2",
+  },
+  {
+    title: "Artsy",
+    image: "/assets/projects/artsy.jpg",
+    url: "https://artsy-fr.vercel.app",
+    stack: ["NextJs", "Typescript", "TailwindCSS", "SwiperJs"],
+    type: "Web Application",
+    niche: "Landing page, Photography, Hackathon",
+    description: "",
+    github: "https://github.com/khervie-star/artsy",
+  },
+  {
+    title: "Lawenz Autos",
+    image: "/assets/projects/lawenz.png",
+    url: "https://lawenz-autos.vercel.app",
+    stack: ["ReactJs", "Typescript", "TailwindCSS"],
+    type: "Website",
+    niche: "Landing page, Auto services, Courier services",
+    description: "",
+    github: "https://github.com/khervie-star/courier-ex",
+  },
+  {
+    title: "Space Tourism",
+    image: "/assets/projects/spacetourism.jpg",
+    url: "https://space-tourism-wine.vercel.app",
+    stack: ["ReactJs", "Javascript", "TailwindCSS", "SwiperJs"],
+    type: "Website",
+    niche: "Landing page, Space Tourism, Challenge, Frontend Mentor",
+    description: "",
+    github: "https://github.com/khervie-star/space-tourism",
+  },
+  {
+    title: "Rest Countries",
+    image: "/assets/projects/restcountry.png",
+    url: "https://resttt-countries.vercel.app/",
+    stack: ["NextJs", "Javascript", "TailwindCSS", "Lodash"],
+    type: "Website",
+    niche: "Website, Country Select, Challenge, Frontend Mentor",
+    description: "",
+    github:
+      "https://github.com/khervie-star/country-select-application-ith-rest-api",
+  },
+  {
+    title: "Portfolio V1",
+    image: "/assets/projects/portfolio1.png",
+    url: "https://khervie00.netlify.app",
+    stack: [
+      "VueJs",
+      "Javascript",
+      "Bootstrap",
+      "Ant Design",
+      "Fullpage.js",
+      "Vuetify",
+    ],
+    type: "Website",
+    niche: "Portfolio",
+    description: "",
+    github: "https://github.com/khervie-star/portfolio_vuejs",
+  },
+  {
+    title: "Portfolio V2",
+    image: "/assets/projects/portfolio2.png",
+    url: "https://khervie00.vercel.app",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "TailwindCSS",
+      "NextUI",
+      "Framer motion",
+      "Animate.css",
+      "Locomotive scroll",
+      "Animated cursor",
+    ],
+    type: "Website",
+    niche: "Portfolio",
+    description: "",
+    github: "https://github.com/khervie-star/khervie00-",
+  },
+  {
+    title: "Biometric Voting UI",
+    image: "/assets/projects/decentralized.png",
+    url: "https://decentralized-voting-ui.netlify.app/",
+    stack: [
+      "ReactJs",
+      "Javascript",
+      "Bootstrap",
+      "Antd Design",
+      "Framer motion",
+      "Animate.css",
+      "Jquery",
+      "TsParticles",
+      "Styled components",
+      "Vanta.js",
+    ],
+    type: "Website",
+    niche: "Hackathon, Blockchain, Choice coin, UI",
+    description: "",
+    github: "https://github.com/khervie-star/decentralized-voting-app-uis",
   },
 ];
 
@@ -163,7 +280,9 @@ export const Web = () => {
               onPress={() => handleOpen(i)}>
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">{project.type}</p>
-                <small className="text-default-500">{project.niche}</small>
+                <small className="text-default-500 text-left">
+                  {project.niche}
+                </small>
                 <h4 className="font-bold text-large">{project.title}</h4>
               </CardHeader>
               <CardBody className="overflow-visible py-2">
