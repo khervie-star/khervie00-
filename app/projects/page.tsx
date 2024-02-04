@@ -37,7 +37,7 @@ const Projects = () => {
         <div>
           {" "}
           <div className="mt-4 md:mt-8">
-            <h1 className="text-[84px] text-center w-full my-4 mt-8 md:mt-2">
+            <h1 className="text-[50px] lg:text-[84px] text-center w-full my-4 mt-8 md:mt-2">
               Projects
             </h1>
             <div className="flex w-full flex-col">

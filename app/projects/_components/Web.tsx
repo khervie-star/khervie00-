@@ -172,7 +172,7 @@ export const Web = () => {
               onPress={() => handleOpen(i)}>
               <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
                 <p className="text-tiny uppercase font-bold">{project.type}</p>
-                <small className="text-default-500">12 Tracks</small>
+                <small className="text-default-500">{project.niche}</small>
                 <h4 className="font-bold text-large">{project.title}</h4>
               </CardHeader>
               <CardBody className="overflow-visible py-2">
