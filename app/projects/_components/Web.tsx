@@ -79,6 +79,75 @@ const web_projects = [
     description: "",
     github: "https://github.com/khervie-star/bemybae",
   },
+  {
+    title: "Glory Tabernacle Ministry",
+    image: "/assets/projects/glorytaberacle.jpeg",
+    url: "https://bemybae.vercel.app",
+    stack: [
+      "NextJs",
+      "Javascript",
+      "TailwindCSS",
+      "Aos CSS",
+      "Animate.css",
+      "Framer motion",
+      "Lottie Animation",
+    ],
+    type: "Website",
+    niche: "Landing page, Organization,",
+    description: "",
+  },
+  {
+    title: "DevChamp",
+    image: "/assets/projects/devchamp.png",
+    url: "https://devchamp.vercel.app",
+    stack: ["ReactJs", "Javascript", "CSS", "TailwindCSS", "BlurHash"],
+    type: "Website",
+    niche: "Landing page, E-learning, Technology,",
+    description: "",
+    github: "https://github.com/khervie-star/github",
+  },
+  {
+    title: "DevChamp",
+    image: "/assets/projects/devchamp.png",
+    url: "https://devchamp.vercel.app",
+    stack: ["ReactJs", "Javascript", "CSS", "TailwindCSS", "BlurHash"],
+    type: "Website",
+    niche: "Landing page, E-learning, Technology,",
+    description: "",
+    github: "https://github.com/khervie-star/devchamp",
+  },
+  {
+    title: "Devwork Solutions",
+    image: "/assets/projects/devchamp.png",
+    url: "https://devworks-solutions.vercel.app",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "TailwindCSS",
+      "HeadlessUI",
+      "Particles.js",
+    ],
+    type: "Website",
+    niche: "Landing page, Technology, Technological Services, Networking",
+    description: "",
+    github: "https://github.com/khervie-star/devworks-solutions",
+  },
+  {
+    title: "Frontida Zois Initiative",
+    image: "",
+    url: "https://fzi-v2.vercel.app",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "TailwindCSS",
+      "HeadlessUI",
+      "React Hot Toast",
+    ],
+    type: "Website",
+    niche: "Landing page, Organization, NGO",
+    description: "",
+    github: "https://github.com/khervie-star/fzi-v2",
+  },
 ];
 
 export const Web = () => {
@@ -131,25 +200,13 @@ export const Web = () => {
                     {current.title}
                   </ModalHeader>
                   <ModalBody className="opacity-75">
-                    <p>
+                    <p>{current.description}</p>
+                    {/* <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nullam pulvinar risus non risus hendrerit venenatis.
                       Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam pulvinar risus non risus hendrerit venenatis.
-                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                    </p>
-                    <p>
-                      Magna exercitation reprehenderit magna aute tempor
-                      cupidatat consequat elit dolor adipisicing. Mollit dolor
-                      eiusmod sunt ex incididunt cillum quis. Velit duis sit
-                      officia eiusmod Lorem aliqua enim laboris do dolor
-                      eiusmod. Et mollit incididunt nisi consectetur esse
-                      laborum eiusmod pariatur proident Lorem eiusmod et. Culpa
-                      deserunt nostrud ad veniam.
-                    </p>
+                    </p> */}
+
                     <div className="flex flex-col gap-5 my-8">
                       <div className="flex items-center gap-2 flex-wrap">
                         <p className="font-medium opacity-100">Stack used:</p>
