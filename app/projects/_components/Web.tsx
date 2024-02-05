@@ -256,6 +256,63 @@ const web_projects = [
     description: "",
     github: "https://github.com/khervie-star/decentralized-voting-app-uis",
   },
+  {
+    title: "Hall of Bits",
+    image: "/assets/projects/hallofbits.png",
+    url: "https://saas.hallofbits.com/",
+    stack: [
+      "ReactJs",
+      "Javascript",
+      "Bootstrap",
+      "Antd Design",
+      "Framer motion",
+      "Animate.css",
+      "TsParticles",
+      "Styled components",
+    ],
+    type: "Website",
+    niche: "SAAS, Blockchain, Play to Earn",
+    description: "",
+  },
+  {
+    title: "Claane",
+    image: "/assets/projects/claane.png",
+    url: "https://claane-frontend.vercel.app",
+    stack: ["NextJs", "Javascript", "Styled components"],
+    type: "Web Application",
+    niche: "E-commerce",
+    description: "",
+  },
+
+  {
+    title: "RGBA To HEX",
+    image: "/assets/projects/rgbatohex.png",
+    url: "https://rgbatohex.vercel.app/",
+    stack: ["NextJs", "Typescript"],
+    type: "Web Application",
+    niche: "Color Converter, SAAS, Web Tool",
+    description: "",
+  },
+  {
+    title: "100MD Tees",
+    image: "/assets/projects/100mdtees.png",
+    url: "https://100md-tees.vercel.app",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "TailwindCSS",
+      "NextUI",
+      "ReactQuery",
+      "Framer motion",
+      "SwiperJs",
+      "Formik",
+      "FabricJs",
+      "HTML Canvas",
+    ],
+    type: "Web Application",
+    niche: "E-commerce, Marketplace, Custom Shirt Design Tool, Canvas",
+    description: "",
+  },
 ];
 
 export const Web = () => {
@@ -301,6 +358,7 @@ export const Web = () => {
           <Modal
             backdrop={"blur"}
             size={"4xl"}
+            scrollBehavior="inside"
             isOpen={isOpen}
             onClose={onClose}>
             <ModalContent>
@@ -311,11 +369,11 @@ export const Web = () => {
                   </ModalHeader>
                   <ModalBody className="opacity-75">
                     <p>{current.description}</p>
-                    {/* <p>
+                    <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nullam pulvinar risus non risus hendrerit venenatis.
                       Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                    </p> */}
+                    </p>
 
                     <div className="flex flex-col gap-5 my-8">
                       <div className="flex items-center gap-2 flex-wrap">

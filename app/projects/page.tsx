@@ -17,13 +17,12 @@ const Projects = () => {
   return (
     <div>
       <div data-scroll-section className="box-border">
-        <div className="h-fit lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative">
+        {/* <div className="h-fit lg:grid grid-cols-2 gap-4 items-start p-10 md:p-20 relative">
           <div className=" flex md:items-start md:h-full">
             <div className="flex flex-col gap-2">
               <h1 className="text-[80px] md:text-[120px] text-left md:text-center mt-20 my-8 leading-[80px] md:leading-normal flex flex-col gap-2 items-start">
                 <span>
-                  Experience
-                  {/*  & <br /> Work Experience */}
+                  Experience & <br /> Work Experience
                 </span>
               </h1>
               <p className="text-base lg:text-[24px]">
@@ -31,15 +30,18 @@ const Projects = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="relative w-[80vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] text-center" />
-        <div>
+        {/* <div className="relative w-[80vw] h-[2px] bg-[#171717] dark:bg-slate-100 mr-[-20vw] text-center" /> */}
+        <div className="">
           {" "}
-          <div className="mt-4 md:mt-8">
-            <h1 className="text-[50px] lg:text-[84px] text-center w-full my-4 mt-8 md:mt-2">
+          <div className="mt-4 md:mt-8 pt-20">
+            <h1 className="text-[45px] lg:text-[80px] text-center w-full mb-2 mt-8 md:mt-2">
               Projects
             </h1>
+            <p className="text-base text-default-400 lg:text-[24px] mb-8 text-center">
+              Some cool projects I&apos;ve worked on over time:
+            </p>
             <div className="flex w-full flex-col">
               <div className="w-full flex justify-center">
                 <Tabs
