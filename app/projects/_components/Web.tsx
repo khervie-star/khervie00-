@@ -17,6 +17,7 @@ type currentType = {
   image: string;
   url: string;
   stack: any;
+  preview: any;
   title: string;
   description: string;
   github?: string;
@@ -40,6 +41,11 @@ const web_projects = [
       "SwiperJs",
       "Formik",
     ],
+    preview: [
+      "/assets/100pcotton/img1.png",
+      "/assets/100pcotton/img2.png",
+      "/assets/100pcotton/img3.png",
+    ],
     type: "Web Application",
     niche: "Blockchain, Ecommerce",
     description:
@@ -48,6 +54,7 @@ const web_projects = [
   {
     title: "Leadlift",
     image: "/assets/projects/leadlift.png",
+
     url: "https://leadlift.io",
     stack: [
       "ReactJs",
@@ -59,6 +66,11 @@ const web_projects = [
       "HeadlesUI",
       "ButterCms",
       "Calendly",
+    ],
+    preview: [
+      "/assets/leadlift/img1.png",
+      "/assets/leadlift/img2.png",
+      "/assets/leadlift/img3.png",
     ],
     type: "Website",
     niche: "Landing page, Marketing, Social Media Management",
@@ -77,6 +89,11 @@ const web_projects = [
       "Animate.css",
       "SwiperJs",
     ],
+    preview: [
+      "/assets/liquidpay/img1.png",
+      "/assets/liquidpay/img2.png",
+      "/assets/liquidpay/img3.png",
+    ],
     type: "Website",
     niche: "Landing page, Payments",
     description: "",
@@ -93,6 +110,7 @@ const web_projects = [
       "Framer motion",
       "Lottie Animation",
     ],
+    preview: [],
     type: "Website",
     niche: "Landing page, Fun, Pet project",
     description: "",
@@ -101,7 +119,7 @@ const web_projects = [
   {
     title: "Glory Tabernacle Ministry",
     image: "/assets/projects/glorytabernacle.jpeg",
-    url: "https://https://glorytabernacleibadan.org/",
+    url: "https://glorytabernacleibadan.org/",
     stack: [
       "NextJs",
       "Javascript",
@@ -111,6 +129,7 @@ const web_projects = [
       "Framer motion",
       "Lottie Animation",
     ],
+    preview: [],
     type: "Website",
     niche: "Landing page, Organization,",
     description: "",
@@ -120,10 +139,11 @@ const web_projects = [
     image: "/assets/projects/devchamp.png",
     url: "https://devchamp.vercel.app",
     stack: ["ReactJs", "Javascript", "CSS", "TailwindCSS", "BlurHash"],
+    preview: [],
     type: "Website",
     niche: "Landing page, E-learning, Technology,",
     description: "",
-    github: "https://github.com/khervie-star/github",
+    github: "https://github.com/khervie-star/devchamp",
   },
 
   {
@@ -137,6 +157,7 @@ const web_projects = [
       "HeadlessUI",
       "Particles.js",
     ],
+    preview: [],
     type: "Website",
     niche: "Landing page, Technology, Technological Services, Networking",
     description: "",
@@ -153,6 +174,7 @@ const web_projects = [
       "HeadlessUI",
       "React Hot Toast",
     ],
+    preview: [],
     type: "Website",
     niche: "Landing page, Organization, NGO",
     description: "",
@@ -163,6 +185,7 @@ const web_projects = [
     image: "/assets/projects/artsy.jpg",
     url: "https://artsy-fr.vercel.app",
     stack: ["NextJs", "Typescript", "TailwindCSS", "SwiperJs"],
+    preview: [],
     type: "Web Application",
     niche: "Landing page, Photography, Hackathon",
     description: "",
@@ -173,6 +196,7 @@ const web_projects = [
     image: "/assets/projects/lawenz.png",
     url: "https://lawenz-autos.vercel.app",
     stack: ["ReactJs", "Typescript", "TailwindCSS"],
+    preview: [],
     type: "Website",
     niche: "Landing page, Auto services, Courier services",
     description: "",
@@ -183,6 +207,7 @@ const web_projects = [
     image: "/assets/projects/spacetourism.jpg",
     url: "https://space-tourism-wine.vercel.app",
     stack: ["ReactJs", "Javascript", "TailwindCSS", "SwiperJs"],
+    preview: [],
     type: "Website",
     niche: "Landing page, Space Tourism, Challenge, Frontend Mentor",
     description: "",
@@ -193,6 +218,7 @@ const web_projects = [
     image: "/assets/projects/restcountry.png",
     url: "https://resttt-countries.vercel.app/",
     stack: ["NextJs", "Javascript", "TailwindCSS", "Lodash"],
+    preview: [],
     type: "Website",
     niche: "Website, Country Select, Challenge, Frontend Mentor",
     description: "",
@@ -211,6 +237,7 @@ const web_projects = [
       "Fullpage.js",
       "Vuetify",
     ],
+    preview: [],
     type: "Website",
     niche: "Portfolio",
     description: "",
@@ -230,6 +257,7 @@ const web_projects = [
       "Locomotive scroll",
       "Animated cursor",
     ],
+    preview: [],
     type: "Website",
     niche: "Portfolio",
     description: "",
@@ -251,10 +279,11 @@ const web_projects = [
       "Styled components",
       "Vanta.js",
     ],
+    preview: [],
     type: "Website",
     niche: "Hackathon, Blockchain, Choice coin, UI",
     description: "",
-    github: "https://github.com/khervie-star/decentralized-voting-app-uis",
+    github: "https://github.com/khervie-star/decentralized-voting-app-ui",
   },
   {
     title: "Hall of Bits",
@@ -270,6 +299,7 @@ const web_projects = [
       "TsParticles",
       "Styled components",
     ],
+    preview: [],
     type: "Website",
     niche: "SAAS, Blockchain, Play to Earn",
     description: "",
@@ -279,9 +309,11 @@ const web_projects = [
     image: "/assets/projects/claane.png",
     url: "https://claane-frontend.vercel.app",
     stack: ["NextJs", "Javascript", "Styled components"],
+    preview: [],
     type: "Web Application",
     niche: "E-commerce",
     description: "",
+    github: "https://github.com/khervie-star/claane-frontend",
   },
 
   {
@@ -289,9 +321,11 @@ const web_projects = [
     image: "/assets/projects/rgbatohex.png",
     url: "https://rgbatohex.vercel.app/",
     stack: ["NextJs", "Typescript"],
+    preview: [],
     type: "Web Application",
     niche: "Color Converter, SAAS, Web Tool",
     description: "",
+    github: "https://github.com/khervie-star/rgbatohex",
   },
   {
     title: "100MD Tees",
@@ -309,6 +343,7 @@ const web_projects = [
       "FabricJs",
       "HTML Canvas",
     ],
+    preview: [],
     type: "Web Application",
     niche: "E-commerce, Marketplace, Custom Shirt Design Tool, Canvas",
     description: "",
@@ -369,6 +404,23 @@ export const Web = () => {
                   </ModalHeader>
                   <ModalBody className="opacity-75">
                     <p>{current.description}</p>
+                    <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+                      {current.preview.map(
+                        (
+                          prev_image: string | undefined,
+                          i: React.Key | null | undefined
+                        ) => (
+                          <Image
+                            key={i}
+                            alt=""
+                            isZoomed
+                            className="object-cover rounded-lg h-[100px] lg:h-[150px]"
+                            src={prev_image}
+                            width={"100%"}
+                          />
+                        )
+                      )}
+                    </div>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Nullam pulvinar risus non risus hendrerit venenatis.

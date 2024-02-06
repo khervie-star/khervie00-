@@ -16,10 +16,6 @@ import { Button } from "@nextui-org/react";
 import Swal from "sweetalert2";
 
 const Page = () => {
-  const emailRef = React.useRef<HTMLInputElement>();
-  const nameRef = React.useRef<HTMLInputElement>();
-  const companyRef = React.useRef<HTMLInputElement>();
-  const messageRef = React.useRef<HTMLInputElement>();
   const [loading, setLoading] = React.useState(false);
   const [formDetails, setFormDetails] = React.useState({
     name: "",
