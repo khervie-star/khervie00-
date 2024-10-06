@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   },
   title: "Kwesi Hervie",
   description: "UI Developer | Cybersecurity Enthusiast | Tech. Nerd ",
+  keywords:"Kwesi, kwesi, Hervie, hervie, Emmanuel, emmanuel, Khervie, Khervie00, khervie, khervie00, Kwesi Hervie, kwesi hervie, UI, UIdev, UI dev, UI developer, Frontend, Frontend developer, ReactJs, NextJs, Mid-level frontend,"
 };
 
 export default function RootLayout({
