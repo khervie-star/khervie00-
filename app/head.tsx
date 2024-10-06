@@ -51,6 +51,8 @@ export default function Head() {
         property="twitter:image"
         content="https://res.cloudinary.com/nfttest/image/upload/v1668599990/Stuff/2_nynika.png"
       />
+      <meta name="keywords" content="Kwesi, kwesi, Hervie, hervie, Emmanuel, emmanuel, Khervie, Khervie00, khervie, khervie00, Kwesi Hervie, kwesi hervie, UI, UIdev, UI dev, UI developer, Frontend, Frontend developer, ReactJs, NextJs, Mid-level frontend"/>
+
       {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
