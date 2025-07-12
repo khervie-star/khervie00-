@@ -9,7 +9,7 @@ import { CgWebsite } from "react-icons/cg";
 import { CiMobile1 } from "react-icons/ci";
 import { GrTechnology } from "react-icons/gr";
 import { SiJsonwebtokens } from "react-icons/si";
-import { Web } from "./_components";
+import { Mobile, Web } from "./_components";
 
 const Projects = () => {
   const [selected, setSelected] = React.useState<any>("web");
@@ -68,7 +68,7 @@ const Projects = () => {
                       </div>
                     }
                   />
-                  <Tab
+                  {/* <Tab
                     key="others"
                     title={
                       <div className="flex items-center space-x-2">
@@ -76,12 +76,17 @@ const Projects = () => {
                         <span>Others</span>
                       </div>
                     }
-                  />
+                  /> */}
                 </Tabs>
               </div>
             </div>
             <div className={"w-full px-5 py-8 lg:px-[100px] lg:py-[70px]"}>
               {selected == "web" && <Web />}
+              {selected == "mobile" && (
+                <section>
+                  <h2 className="text-center">Give me 5 minutes 🫠...</h2>
+                </section>
+              )}
             </div>
           </div>
         </div>

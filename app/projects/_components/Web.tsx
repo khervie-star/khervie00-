@@ -17,7 +17,7 @@ type currentType = {
   image: string;
   url: string;
   stack: any;
-  preview: any;
+  preview?: any;
   title: string;
   description: string;
   github?: string;
@@ -26,6 +26,145 @@ type currentType = {
 };
 
 const web_projects = [
+  {
+    title: "Tangl Capital Partners",
+    image: "/assets/projects/tangl.png",
+    url: "https://www.tanglcapitalpartners.com",
+    stack: ["NextJs", "Typescript", "MUI", "TailwindCSS", "MongoDB", "Formik"],
+    preview: [],
+    type: "Web Application",
+    niche: "Investment, Blockchains, Digital Assets",
+    description: "",
+  },
+  {
+    title: "Beyond Sicklecell Foundation",
+    image: "/assets/projects/bsf.jpg",
+    url: "https://www.beyondsicklecellfoundation.com",
+    stack: ["Html", "Css", "JavaScript", "Php"],
+    preview: [],
+    type: "Website",
+    niche: "NGO, Sicklecell Awareness",
+    description: "",
+  },
+  {
+    title: "Xig Protocol",
+    image: "/assets/projects/xig.png",
+    url: "https://xigprotocol.com",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "NextUI",
+      "TailwindCSS",
+      "Supabase",
+      "CosmWasm",
+      "Stargate",
+    ],
+    preview: [
+      "/assets/xig/img1.png",
+      "/assets/xig/img2.jpg",
+      "/assets/xig/img3.jpg",
+    ],
+    type: "Web Application",
+    niche: "Multisignature wallet, Blockchain",
+    description: "",
+  },
+  {
+    title: "Foodhunt",
+    image: "/assets/projects/foodhunt.jpg",
+    url: "https://www.foodhunt-web.vercel.app",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "NextUI",
+      "TailwindCSS",
+      "Supabase",
+      "Python",
+    ],
+    preview: [
+      "/assets/foodhunt/img1.jpg",
+      "/assets/foodhunt/img2.jpg",
+      "/assets/foodhunt/img3.jpg",
+    ],
+    type: "Web Application",
+    niche: "Food delivery, Store setup",
+    description: "",
+  },
+  {
+    title: "Illusion Services Website",
+    image: "/assets/projects/illusion.png",
+    url: "https://www.illusionservices.com",
+    stack: ["NextJs", "Typescript", "NextUI", "TailwindCSS"],
+    preview: [],
+    type: "Website",
+    niche: "Illusion services",
+    description: "",
+  },
+  {
+    title: "Skuwave",
+    image: "/assets/projects/skuwave.jpg",
+    url: "https://myskuwave.com",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "NextUI",
+      "TailwindCSS",
+      "Supabase",
+      "Python",
+    ],
+    preview: [],
+    type: "Web Application",
+    niche: "Food delivery, Store setup",
+    description: "",
+  },
+  {
+    title: "Pario Technology Services",
+    image: "/assets/projects/pario.jpg",
+    url: "https://pario.netlify.app",
+    stack: ["Php", "Css", "Html"],
+    preview: [],
+    type: "Website",
+    niche: "Pario, Technology Services services",
+    description: "",
+  },
+  {
+    title: "100MD Tees",
+    image: "/assets/projects/100mdtees.jpg",
+    url: "https://100md-tees.vercel.app",
+    stack: [
+      "NextJs",
+      "Typescript",
+      "TailwindCSS",
+      "NextUI",
+      "ReactQuery",
+      "Framer motion",
+      "SwiperJs",
+      "Formik",
+      "FabricJs",
+      "HTML Canvas",
+    ],
+    preview: [
+      "/assets/tees/img1.jpg",
+      "/assets/tees/img2.jpg",
+      "/assets/tees/img3.jpg",
+    ],
+    type: "Web Application",
+    niche: "E-commerce, Marketplace, Custom Shirt Design Tool, Canvas",
+    description: "",
+  },
+  {
+    title: "Gropay",
+    image: "/assets/projects/gropay.jpg",
+    url: "https://gropay.netlify.app",
+    stack: ["Php", "Css", "Html"],
+    preview: [
+      "/assets/100pcotton/img1.png",
+      "/assets/100pcotton/img2.png",
+      "/assets/100pcotton/img3.png",
+    ],
+    type: "Web Application",
+    niche: "Bills Aggregator, Technology Services",
+    description: "",
+  },
   {
     title: "100% Cotton",
     image: "/assets/projects/100pcotton.png",
@@ -327,27 +466,6 @@ const web_projects = [
     description: "",
     github: "https://github.com/khervie-star/rgbatohex",
   },
-  {
-    title: "100MD Tees",
-    image: "/assets/projects/100mdtees.png",
-    url: "https://100md-tees.vercel.app",
-    stack: [
-      "NextJs",
-      "Typescript",
-      "TailwindCSS",
-      "NextUI",
-      "ReactQuery",
-      "Framer motion",
-      "SwiperJs",
-      "Formik",
-      "FabricJs",
-      "HTML Canvas",
-    ],
-    preview: [],
-    type: "Web Application",
-    niche: "E-commerce, Marketplace, Custom Shirt Design Tool, Canvas",
-    description: "",
-  },
 ];
 
 export const Web = () => {
@@ -380,7 +498,7 @@ export const Web = () => {
               <CardBody className="overflow-visible py-2">
                 <Image
                   alt="Card background"
-                  className="object-cover rounded-xl"
+                  className="object-cover rounded-xl !h-[250px]"
                   src={project.image}
                   width={"100%"}
                 />
@@ -421,11 +539,7 @@ export const Web = () => {
                         )
                       )}
                     </div>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nullam pulvinar risus non risus hendrerit venenatis.
-                      Pellentesque sit amet hendrerit risus, sed porttitor quam.
-                    </p>
+                    <p>{current.description}</p>
 
                     <div className="flex flex-col gap-5 my-8">
                       <div className="flex items-center gap-2 flex-wrap">
