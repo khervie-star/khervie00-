@@ -39,7 +39,7 @@ const web_projects = [
   {
     title: "Beyond Sicklecell Foundation",
     image: "/assets/projects/bsf.jpg",
-    url: "https://www.beyondsicklecellfoundation.com",
+    url: "https://www.beyondsicklecell.com",
     stack: ["Html", "Css", "JavaScript", "Php"],
     preview: [],
     type: "Website",
